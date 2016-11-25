@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
+
 {% block content %}
+
     <form role="form" method="post" action="{% url 'register' %}">
         <h4 align="center">Create a new account</h4>
         {% csrf_token %}

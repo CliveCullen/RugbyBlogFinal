@@ -12,6 +12,9 @@ class Product(models.Model):
     description = models.CharField(max_length=300)
     price = models.IntegerField()
 
+    def __unicode__(self):
+        return self.title
+
     @property
     def paypal_form(self):
         paypal_dict = {
@@ -27,6 +30,3 @@ class Product(models.Model):
 
         return PayPalPaymentsForm(initial=paypal_dict)
 
-
-def __unicode__(self):
-    return self.name
