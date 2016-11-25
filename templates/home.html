@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% block content %}
+    <div class="row">
+
+
+        <div class="col-lg-12" align="center"><h1>Choose your teams</h1></div>
+
+        <div class="col-md-6" id="inputOne" align="center"><h1>Team One</h1></div>
+        <div class="col-md-6" id="InputTwo" align="center"><h1>Team Two</h1></div>
+
+    </div>
+    <div class="col-md-6" id="team1" align="center">
+        <div class="form-group">
+            <input type="text" class="form-control" id="inputOne" placeholder="Enter your first team here">
+
+        </div>
+    </div>
+     <div class="col-md-6" id ="team1" align="center">
+     	<div class="form-group">
+     		<input type="text" class="form-control" id="inputOne" placeholder="Enter your first team here" >
+
+     	</div>
+     </div>
+
+    <div class="row">
+        <div class="col-md-5" align="center"><img id="team-1-img" src="../static/images/scrumsideleft.jpg "
+                                                  height="600px"
+                                                  width="100%"></div>
+        <div class="col-md-2" align="center"><img src="../static/images/vs.png " height="60px" width="60px"></div>
+        <div class="col-md-5" align="center"><img id="team-2-img" src="../static/images/scrumsideright.jpg "
+                                                  height="600px"
+                                                  width="100%">
+
+        </div>
+    </div>
+
+    <div class="container" id="content">
+
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var teamOne = '';
+            var teamTwo = '';
+            $("#inputOne").on("blur", function () {
+
+
+                var firstTeam = $("#inputOne").val()
+                teamOne += firstTeam;
+
+                $("#team-1-img").attr("src", "img/" + firstTeam + ".png")
+                $("#firstFans").attr("src", "img/" + firstTeam + "fans.jpg")
+
+
+            });
+
+            $("#inputTwo").on("blur", function () {
+                var secondTeam = $("#inputTwo").val()
+                teamTwo += secondTeam;
+                $("#team-2-img").attr("src", "img/" + secondTeam + ".png")
+                $("#secondFans").attr("src", "img/" + secondTeam + "fans.jpg")
+
+                // show ireland v england result
+
+                $.ajax({
+                    url: "irelandvengland.html",
+                    success: function (results) {
+                        if (teamOne == "ireland" && teamTwo == "england" || teamOne == "england" && teamTwo == "ireland") {
+                            $("#content").html(results);
+                        }
+                    }
+                });
+
+
+                //show ireland v scotland results
+                $.ajax({
+                    url: "irelandvscotland.html",
+                    success: function (results) {
+                        if (teamOne == "ireland" && teamTwo == "scotland" || teamOne == "scotland" && teamTwo == "ireland") {
+                            $("#content").html(results);
+                        }
+                    }
+                });
+
+
+                //show ireland v france results
+                $.ajax({
+                    url: "irelandvfrance.html",
+                    success: function (results) {
+                        if (teamOne == "ireland" && teamTwo == "france" || teamOne == "france" && teamTwo == "ireland") {
+                            $("#content").html(results);
+                        }
+                    }
+                });
+
+                //show ireland v italy results
+                $.ajax({
+                    url: "irelandvfrance.html",
+                    success: function (results) {
+                        if (teamOne == "ireland" && teamTwo == "italy" || teamOne == "italy" && teamTwo == "ireland") {
+                            $("#content").html(results);
+                        }
+                    }
+                });
+
+                //show ireland v wales results
+                $.ajax({
+                    url: "irelandvwales.html",
+                    success: function (results) {
+                        if (teamOne == "ireland" && teamTwo == "wales" || teamOne == "wales" && teamTwo == "ireland") {
+                            $("#content").html(results);
+                        }
+                    }
+                });
+
+
+                $("#input2").on("blur", function () {
+                });
+            });
+
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var teamOne = '';
+            var teamTwo = '';
+            $("#inputOne").on("blur", function () {
+
+
+                var firstTeam = $("#inputOne").val()
+                teamOne += firstTeam;
+
+                $("#team-1-img").attr("src", "img/" + firstTeam + ".png")
+                $("#firstFans").attr("src", "img/" + firstTeam + "fans.jpg")
+
+
+            });
+
+            $("#inputTwo").on("blur", function () {
+                var secondTeam = $("#inputTwo").val()
+                teamTwo += secondTeam;
+                $("#team-2-img").attr("src", "img/" + secondTeam + ".png")
+                $("#secondFans").attr("src", "img/" + secondTeam + "fans.jpg")
+
+                // show ireland v england result
+
+                $.ajax({
+                    url: "irelandvengland.html",
+                    success: function (results) {
+                        if (teamOne == "ireland" && teamTwo == "england" || teamOne == "england" && teamTwo == "ireland") {
+                            $("#content").html(results);
+                        }
+                    }
+                });
+
+
+                //show ireland v scotland results
+                $.ajax({
+                    url: "irelandvscotland.html",
+                    success: function (results) {
+                        if (teamOne == "ireland" && teamTwo == "scotland" || teamOne == "scotland" && teamTwo == "ireland") {
+                            $("#content").html(results);
+                        }
+                    }
+                });
+
+
+                //show ireland v france results
+                $.ajax({
+                    url: "irelandvfrance.html",
+                    success: function (results) {
+                        if (teamOne == "ireland" && teamTwo == "france" || teamOne == "france" && teamTwo == "ireland") {
+                            $("#content").html(results);
+                        }
+                    }
+                });
+
+                //show ireland v italy results
+                $.ajax({
+                    url: "irelandvfrance.html",
+                    success: function (results) {
+                        if (teamOne == "ireland" && teamTwo == "italy" || teamOne == "italy" && teamTwo == "ireland") {
+                            $("#content").html(results);
+                        }
+                    }
+                });
+
+                //show ireland v wales results
+                $.ajax({
+                    url: "irelandvwales.html",
+                    success: function (results) {
+                        if (teamOne == "ireland" && teamTwo == "wales" || teamOne == "wales" && teamTwo == "ireland") {
+                            $("#content").html(results);
+                        }
+                    }
+                });
+
+
+                $("#input2").on("blur", function () {
+                });
+            });
+
+
+        });
+    </script>
+
+{% endblock %}

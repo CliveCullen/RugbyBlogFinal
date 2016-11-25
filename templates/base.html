@@ -1,0 +1,157 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<head>
+    <title>Rugby Blog</title>
+
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+
+    .nav {
+        background-color: #222;
+        color: white;
+    }
+
+    .jumbotron {
+        margin-bottom: 0px;
+        background-image: url("../static/images/scrum.jpg ");
+        background-color: #222;
+        background-position: 0% 0%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        text-shadow: black 0.3em 0.3em 0.3em;
+    }
+
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: white;
+        background-color: #222;
+    }
+
+    .col-md-6 {
+        color: white;
+    }
+
+    .col-lg-12 {
+        color: white;
+    }
+
+    .h2 {
+        color: white;
+    }
+
+    /** { border:1px solid; }
+    */
+    #firstFans {
+        opacity: 0.4;
+    }
+
+    #secondFans {
+        opacity: 0.4;
+    }
+
+    .table {
+        color: white;
+    }
+
+    .a {
+        color: white;
+    }
+
+    .h {
+        color: white;
+    }
+
+    footer {
+        background-color: #222;
+        color: white;
+    }
+
+    #teams {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+</style>
+<body>
+<div id="masthead">
+    <div>
+        <div class="row">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+
+                            <span class="icon-bar"><a href="/home/"></a></span>
+                            <span class="icon-bar"><a href="/blog/"></a></span>
+                            <span class="icon-bar"> <a href="/login/"></a></span>
+                            <span class="icon-bar"> <a href="/register/"></a></span>
+                            <span class="icon-bar"> <a href="/logout/"></a></span>
+                        </button>
+
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+
+                            {% if user.is_authenticated %}
+                                <li>
+                                    <a href="/home/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/blog">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="/products/">Products</a>
+                                </li>
+                                <li>
+                                    <a href="/logout/">Log Out</a>
+                                </li>
+
+
+                            {% else %}
+                                <li>
+                                    <a href="/home/">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="/login/">Log In</a>
+                                </li>
+                                <li>
+                                    <a href="/register/">Register</a>
+                                </li>
+                                <li>
+                                    <a href="/products/">Products</a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <div class="jumbotron" id="main" align="center">
+                <h1>Welcome to Scrum Cap</h1>
+                <h2>Where teams really go Head to Head</h2>
+            </div>
+
+        </div>
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+<script rel="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+<footer>
+
+</footer>
