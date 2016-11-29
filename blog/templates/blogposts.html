@@ -1,15 +1,16 @@
 {% extends "base.html" %}
-{% load gravatar %}
 {% load staticfiles %}
-
+{% load gravatar %}
 {% block content %}
     {% for post in posts %}
-        <div class="row">
+        <div class="row" id="posts">
             <hr>
 
             <div class="col-md-2 col-sm-3 text-center">
                 <a class="story-img" href="#">
-                    <img src="{% gravatar_url post.author.email 150 %}" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
+                    <img src="{% gravatar_url post.author.email 150 %}"
+                         style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;"
+                         class="img-circle">
                 </a>
 
             </div>
@@ -19,10 +20,10 @@
                 <div class="row" id="posts">
                     <div class="col-xs-9">
                         <p>{{ post.content|truncatewords:30 }}</p>
-                        <p><button class="btn btn-default" onclick="location.href={{ post.id }}">Read More</button></p>
+                        {{ post.published_date }} | Views {{ post.views }}
+                        <p><strong> Tag</strong> {{ post.tag }}</p>
+                        <button class="btn btn-default" onclick="location.href={{ post.id }}">Read More</button>
                         <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post</button>
-                        <p>{{ post.published_date }} | Views {{ post.views }}
-                          <p> <strong> Tag</strong> {{ post.tag }}</p>
                     </div>
                 </div>
             </div>

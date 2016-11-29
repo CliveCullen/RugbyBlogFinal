@@ -1,33 +1,35 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
     <div class="row">
+        <form method="GET" action="{% url 'head_to_head' %}">
+            <div class="col-lg-12" align="center"><h1>Choose your teams</h1></div>
+            <div class="col-md-6" id="inputOne" align="center"><h1>Team One</h1></div>
+            <div class="col-md-6" id="InputTwo" align="center"><h1>Team Two</h1></div>
 
+            <div class="col-md-6" id="team1" align="center">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputOne" name="teamOne" placeholder="Enter your first team here">
+                </div>
+            </div>
+            <div class="col-md-6" id="team1" align="center">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputOne" name="teamTwo" placeholder="Enter your first team here">
+                </div>
+            </div>
 
-        <div class="col-lg-12" align="center"><h1>Choose your teams</h1></div>
+            <button type="submit">OK</button>
 
-        <div class="col-md-6" id="inputOne" align="center"><h1>Team One</h1></div>
-        <div class="col-md-6" id="InputTwo" align="center"><h1>Team Two</h1></div>
-
+            </form>
     </div>
-    <div class="col-md-6" id="team1" align="center">
-        <div class="form-group">
-            <input type="text" class="form-control" id="inputOne" placeholder="Enter your first team here">
 
-        </div>
-    </div>
-    <div class="col-md-6" id="team1" align="center">
-        <div class="form-group">
-            <input type="text" class="form-control" id="inputOne" placeholder="Enter your first team here">
-
-        </div>
-    </div>
 
     <div class="row">
-        <div class="col-md-5" align="center"><img id="team-1-img" src="../static/images/ireland.png " height="600px" width="100%"></div>
-        <div class="col-md-2" align="center"><img src="../static/images/vs.png " height="60px" width="60px"></div>
+        <div class="col-md-5" align="center"><img id="team-1-img" src="{% static teamOne.image %}" height="600px" width="100%"></div>
+        <div class="col-md-2" align="center"><img src={% static 'images/vs.png'%} height="60px" width="60px"></div>
 
-        <div class="col-md-5" align="center"><img id="team-2-img" src="../static/images/scotland.png " height="600px" width="100%">
+        <div class="col-md-5" align="center"><img id="team-2-img" src="{% static teamTwo.image %}" height="600px" width="100%">
 
         </div>
     </div>
@@ -40,68 +42,68 @@
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous"></script>
 
-    <h3 align="center">Overall</h3>
-    <table class="table table-inverse">
-        <tr>
-            <th width="125">Details</th>
-            <th width="125">Played</th>
-            <th width="125">Won by<br/>
-                <span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"
-                                            width="23" height="15" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"
-                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a
-                        href="/wiki/Ireland_national_rugby_union_team"
-                        title="Ireland national rugby union team">Ireland</a></th>
-            <th width="125">Won by<br/>
-                <span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/23px-Flag_of_Scotland.svg.png"
-                                            width="23" height="14" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/35px-Flag_of_Scotland.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/46px-Flag_of_Scotland.svg.png 2x"
-                                            data-file-width="1000" data-file-height="600"/>&#160;</span><a
-                        href="/wiki/Scotland_national_rugby_union_team" title="Scotland national rugby union team">Scotland</a>
-            </th>
-            <th width="125">Drawn</th>
-            <th width="125">Ireland points</th>
-            <th width="125">Scotland points</th>
-        </tr>
-        <tr>
-            <td>In Ireland</td>
-            <td>65</td>
-            <td>34</td>
-            <td>27</td>
-            <td>4</td>
-            <td>729</td>
-            <td>606</td>
-        </tr>
-        <tr>
-            <td>In Scotland</td>
-            <td>67</td>
-            <td>27</td>
-            <td>39</td>
-            <td>1</td>
-            <td>746</td>
-            <td>774</td>
-        </tr>
-        <tr>
-            <td>Neutral venue</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr class="sortbottom">
-            <td><b>Overall</b></td>
-            <td><b>132</b></td>
-            <td><b>61</b></td>
-            <td><b>66</b></td>
-            <td><b>5</b></td>
-            <td><b>1475</b></td>
-            <td><b>1380</b></td>
-        </tr>
-    </table>
+{#    <h3 align="center">Overall</h3>#}
+{#    <table class="table table-inverse">#}
+{#        <tr>#}
+{#            <th width="125">Details</th>#}
+{#            <th width="125">Played</th>#}
+{#            <th width="125">Won by<br/>#}
+{#                <span class="flagicon"><img alt=""#}
+{#                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"#}
+{#                                            width="23" height="15" class="thumbborder"#}
+{#                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"#}
+{#                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a#}
+{#                        href="/wiki/Ireland_national_rugby_union_team"#}
+{#                        title="Ireland national rugby union team">Ireland</a></th>#}
+{#            <th width="125">Won by<br/>#}
+{#                <span class="flagicon"><img alt=""#}
+{#                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/23px-Flag_of_Scotland.svg.png"#}
+{#                                            width="23" height="14" class="thumbborder"#}
+{#                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/35px-Flag_of_Scotland.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/46px-Flag_of_Scotland.svg.png 2x"#}
+{#                                            data-file-width="1000" data-file-height="600"/>&#160;</span><a#}
+{#                        href="/wiki/Scotland_national_rugby_union_team" title="Scotland national rugby union team">Scotland</a>#}
+{#            </th>#}
+{#            <th width="125">Drawn</th>#}
+{#            <th width="125">Ireland points</th>#}
+{#            <th width="125">Scotland points</th>#}
+{#        </tr>#}
+{#        <tr>#}
+{#            <td>In Ireland</td>#}
+{#            <td>65</td>#}
+{#            <td>34</td>#}
+{#            <td>27</td>#}
+{#            <td>4</td>#}
+{#            <td>729</td>#}
+{#            <td>606</td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#            <td>In Scotland</td>#}
+{#            <td>67</td>#}
+{#            <td>27</td>#}
+{#            <td>39</td>#}
+{#            <td>1</td>#}
+{#            <td>746</td>#}
+{#            <td>774</td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#            <td>Neutral venue</td>#}
+{#            <td>0</td>#}
+{#            <td>0</td>#}
+{#            <td>0</td>#}
+{#            <td>0</td>#}
+{#            <td>0</td>#}
+{#            <td>0</td>#}
+{#        </tr>#}
+{#        <tr class="sortbottom">#}
+{#            <td><b>Overall</b></td>#}
+{#            <td><b>132</b></td>#}
+{#            <td><b>61</b></td>#}
+{#            <td><b>66</b></td>#}
+{#            <td><b>5</b></td>#}
+{#            <td><b>1475</b></td>#}
+{#            <td><b>1380</b></td>#}
+{#        </tr>#}
+{#    </table>#}
 
     <h3 align=center>Last ten games</h3>
     <table class="table table-inverse">

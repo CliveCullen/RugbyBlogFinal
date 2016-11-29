@@ -2,10 +2,10 @@ from __future__ import unicode_literals
 
 from django.db import models
 
+
 # Create your models here.
 
 class team(models.Model):
-
     Name = models.CharField(max_length=200)
     image = models.ImageField(upload_to="images", blank=True, null=True)
     rank = models.IntegerField()
@@ -13,8 +13,8 @@ class team(models.Model):
     def __unicode__(self):
         return self.Name
 
-class game(models.Model):
 
+class game(models.Model):
     date = models.DateField(blank=True, null=True)
     Host = models.TextField()
     teamA = models.TextField()
@@ -24,4 +24,19 @@ class game(models.Model):
     competition = models.TextField()
 
     def __unicode__(self):
-     return self.Host
+        return self.Host
+
+
+class overall(models.Model):
+    teamA = models.TextField()
+    teamB = models.TextField()
+    location = models.TextField(max_length=50)
+    played = models.IntegerField()
+    wonByTeamA = models.IntegerField()
+    wonByTeamB = models.IntegerField()
+    drawn = models.IntegerField()
+    teamAPoints = models.IntegerField()
+    teamBPoints = models.IntegerField()
+
+    def __unicode__(self):
+        return self.Host
