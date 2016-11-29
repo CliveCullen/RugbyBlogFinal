@@ -1,5 +1,4 @@
 from __future__ import unicode_literals
-
 from django.db import models
 
 
@@ -16,7 +15,7 @@ class team(models.Model):
 
 class game(models.Model):
     date = models.DateField(blank=True, null=True)
-    Host = models.TextField()
+    host = models.TextField()
     teamA = models.TextField()
     teamB = models.TextField()
     scoreA = models.IntegerField()
@@ -24,7 +23,7 @@ class game(models.Model):
     competition = models.TextField()
 
     def __unicode__(self):
-        return self.Host
+        return self.host
 
 
 class overall(models.Model):
@@ -39,4 +38,4 @@ class overall(models.Model):
     teamBPoints = models.IntegerField()
 
     def __unicode__(self):
-        return self.Host
+        return self.location

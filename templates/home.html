@@ -10,26 +10,30 @@
 
             <div class="col-md-6" id="team1" align="center">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="inputOne" name="teamOne" placeholder="Enter your first team here">
+                    <input type="text" class="form-control" id="inputOne" name="teamOne"
+                           placeholder="Enter your first team here">
                 </div>
             </div>
             <div class="col-md-6" id="team1" align="center">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="inputOne" name="teamTwo" placeholder="Enter your first team here">
+                    <input type="text" class="form-control" id="inputOne" name="teamTwo"
+                           placeholder="Enter your first team here">
                 </div>
             </div>
 
             <button type="submit">OK</button>
 
-            </form>
+        </form>
     </div>
 
 
     <div class="row">
-        <div class="col-md-5" align="center"><img id="team-1-img" src="{% static teamOne.image %}" height="600px" width="100%"></div>
-        <div class="col-md-2" align="center"><img src={% static 'images/vs.png'%} height="60px" width="60px"></div>
+        <div class="col-md-5" align="center"><img id="team-1-img" src="{% static teamOne.image %}" height="600px"
+                                                  width="100%"></div>
+        <div class="col-md-2" align="center"><img src={% static 'images/vs.png' %} height="60px" width="60px"></div>
 
-        <div class="col-md-5" align="center"><img id="team-2-img" src="{% static teamTwo.image %}" height="600px" width="100%">
+        <div class="col-md-5" align="center"><img id="team-2-img" src="{% static teamTwo.image %}" height="600px"
+                                                  width="100%">
 
         </div>
     </div>
@@ -42,264 +46,103 @@
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous"></script>
 
-{#    <h3 align="center">Overall</h3>#}
-{#    <table class="table table-inverse">#}
-{#        <tr>#}
-{#            <th width="125">Details</th>#}
-{#            <th width="125">Played</th>#}
-{#            <th width="125">Won by<br/>#}
-{#                <span class="flagicon"><img alt=""#}
-{#                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"#}
-{#                                            width="23" height="15" class="thumbborder"#}
-{#                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"#}
-{#                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a#}
-{#                        href="/wiki/Ireland_national_rugby_union_team"#}
-{#                        title="Ireland national rugby union team">Ireland</a></th>#}
-{#            <th width="125">Won by<br/>#}
-{#                <span class="flagicon"><img alt=""#}
-{#                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/23px-Flag_of_Scotland.svg.png"#}
-{#                                            width="23" height="14" class="thumbborder"#}
-{#                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/35px-Flag_of_Scotland.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/46px-Flag_of_Scotland.svg.png 2x"#}
-{#                                            data-file-width="1000" data-file-height="600"/>&#160;</span><a#}
-{#                        href="/wiki/Scotland_national_rugby_union_team" title="Scotland national rugby union team">Scotland</a>#}
-{#            </th>#}
-{#            <th width="125">Drawn</th>#}
-{#            <th width="125">Ireland points</th>#}
-{#            <th width="125">Scotland points</th>#}
-{#        </tr>#}
-{#        <tr>#}
-{#            <td>In Ireland</td>#}
-{#            <td>65</td>#}
-{#            <td>34</td>#}
-{#            <td>27</td>#}
-{#            <td>4</td>#}
-{#            <td>729</td>#}
-{#            <td>606</td>#}
-{#        </tr>#}
-{#        <tr>#}
-{#            <td>In Scotland</td>#}
-{#            <td>67</td>#}
-{#            <td>27</td>#}
-{#            <td>39</td>#}
-{#            <td>1</td>#}
-{#            <td>746</td>#}
-{#            <td>774</td>#}
-{#        </tr>#}
-{#        <tr>#}
-{#            <td>Neutral venue</td>#}
-{#            <td>0</td>#}
-{#            <td>0</td>#}
-{#            <td>0</td>#}
-{#            <td>0</td>#}
-{#            <td>0</td>#}
-{#            <td>0</td>#}
-{#        </tr>#}
-{#        <tr class="sortbottom">#}
-{#            <td><b>Overall</b></td>#}
-{#            <td><b>132</b></td>#}
-{#            <td><b>61</b></td>#}
-{#            <td><b>66</b></td>#}
-{#            <td><b>5</b></td>#}
-{#            <td><b>1475</b></td>#}
-{#            <td><b>1380</b></td>#}
-{#        </tr>#}
-{#    </table>#}
+    {#    <h3 align="center">Overall</h3>#}
+    {#    <table class="table table-inverse">#}
+    {#        <tr>#}
+    {#            <th width="125">Details</th>#}
+    {#            <th width="125">Played</th>#}
+    {#            <th width="125">Won by<br/>#}
+    {#                <span class="flagicon"><img alt=""#}
+    {#                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"#}
+    {#                                            width="23" height="15" class="thumbborder"#}
+    {#                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"#}
+    {#                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a#}
+    {#                        href="/wiki/Ireland_national_rugby_union_team"#}
+    {#                        title="Ireland national rugby union team">Ireland</a></th>#}
+    {#            <th width="125">Won by<br/>#}
+    {#                <span class="flagicon"><img alt=""#}
+    {#                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/23px-Flag_of_Scotland.svg.png"#}
+    {#                                            width="23" height="14" class="thumbborder"#}
+    {#                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/35px-Flag_of_Scotland.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/46px-Flag_of_Scotland.svg.png 2x"#}
+    {#                                            data-file-width="1000" data-file-height="600"/>&#160;</span><a#}
+    {#                        href="/wiki/Scotland_national_rugby_union_team" title="Scotland national rugby union team">Scotland</a>#}
+    {#            </th>#}
+    {#            <th width="125">Drawn</th>#}
+    {#            <th width="125">Ireland points</th>#}
+    {#            <th width="125">Scotland points</th>#}
+    {#        </tr>#}
+    {#        <tr>#}
+    {#            <td>In Ireland</td>#}
+    {#            <td>65</td>#}
+    {#            <td>34</td>#}
+    {#            <td>27</td>#}
+    {#            <td>4</td>#}
+    {#            <td>729</td>#}
+    {#            <td>606</td>#}
+    {#        </tr>#}
+    {#        <tr>#}
+    {#            <td>In Scotland</td>#}
+    {#            <td>67</td>#}
+    {#            <td>27</td>#}
+    {#            <td>39</td>#}
+    {#            <td>1</td>#}
+    {#            <td>746</td>#}
+    {#            <td>774</td>#}
+    {#        </tr>#}
+    {#        <tr>#}
+    {#            <td>Neutral venue</td>#}
+    {#            <td>0</td>#}
+    {#            <td>0</td>#}
+    {#            <td>0</td>#}
+    {#            <td>0</td>#}
+    {#            <td>0</td>#}
+    {#            <td>0</td>#}
+    {#        </tr>#}
+    {#        <tr class="sortbottom">#}
+    {#            <td><b>Overall</b></td>#}
+    {#            <td><b>132</b></td>#}
+    {#            <td><b>61</b></td>#}
+    {#            <td><b>66</b></td>#}
+    {#            <td><b>5</b></td>#}
+    {#            <td><b>1475</b></td>#}
+    {#            <td><b>1380</b></td>#}
+    {#        </tr>#}
+    {#    </table>#}
 
     <h3 align=center>Last ten games</h3>
-    <table class="table table-inverse">
 
+    {#    <h2 align="center">The Winner is Ireland !</h2>#}
+    {#    <div align="center">#}
+    {#    <image src = "../static/images/ireland.png"></image>#}
+
+
+
+
+
+    <table class="table">
         <thead>
         <tr>
-            <th>No.</th>
             <th>Date</th>
-            <th>Venue</th>
-            <th>Score</th>
-            <th>Winner</th>
+            <th>Host</th>
+            <th>TeamA</th>
+            <th>TeamB</th>
+            <th>ScoreA</th>
+            <th>ScoreB</th>
             <th>Competition</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th>132</th>
-            <td>19 March 2016</td>
-            <td><a href="/wiki/Aviva_Stadium" title="Aviva Stadium">Aviva Stadium</a>, <a href="/wiki/Dublin"
-                                                                                          title="Dublin">Dublin</a></td>
-            <td align="center">35 – 25</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"
-                                            width="23" height="15" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"
-                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a
-                    href="/wiki/Ireland_national_rugby_union_team" title="Ireland national rugby union team">Ireland</a>
-            </td>
-            <td><a href="/wiki/2016_Six_Nations_Championship" title="2016 Six Nations Championship">2016 Six Nations
-                Championship</a></td>
-        </tr>
-        <tr>
-            <th>131</th>
-            <td>15 August 2015</td>
-            <td><a href="/wiki/Aviva_Stadium" title="Aviva Stadium">Aviva Stadium</a>, <a href="/wiki/Dublin"
-                                                                                          title="Dublin">Dublin</a></td>
-            <td align="center">28 – 22</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"
-                                            width="23" height="15" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"
-                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a
-                    href="/wiki/Ireland_national_rugby_union_team" title="Ireland national rugby union team">Ireland</a>
-            </td>
-            <td><a href="/wiki/2015_Rugby_World_Cup_warm-up_matches" title="2015 Rugby World Cup warm-up matches">2015
-                Rugby World Cup warm-up</a></td>
-        </tr>
-        <tr>
-            <th>130</th>
-            <td>21 March 2015</td>
-            <td><a href="/wiki/Murrayfield_Stadium" title="Murrayfield Stadium">BT Murrayfield Stadium</a>, <a
-                    href="/wiki/Edinburgh" title="Edinburgh">Edinburgh</a></td>
-            <td align="center">10 – 40</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"
-                                            width="23" height="15" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"
-                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a
-                    href="/wiki/Ireland_national_rugby_union_team" title="Ireland national rugby union team">Ireland</a>
-            </td>
-            <td><a href="/wiki/2015_Six_Nations_Championship" title="2015 Six Nations Championship">2015 Six Nations</a>
-            </td>
-        </tr>
-        <tr>
-            <th>129</th>
-            <td>2 February 2014</td>
-            <td><a href="/wiki/Aviva_Stadium" title="Aviva Stadium">Aviva Stadium</a>, <a href="/wiki/Dublin"
-                                                                                          title="Dublin">Dublin</a></td>
-            <td align="center">28 – 6</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"
-                                            width="23" height="15" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"
-                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a
-                    href="/wiki/Ireland_national_rugby_union_team" title="Ireland national rugby union team">Ireland</a>
-            </td>
-            <td><a href="/wiki/2014_Six_Nations_Championship" title="2014 Six Nations Championship">2014 Six Nations</a>
-            </td>
-        </tr>
-        <tr>
-            <th>128</th>
-            <td>24 February 2013</td>
-            <td><a href="/wiki/Murrayfield_Stadium" title="Murrayfield Stadium">Murrayfield Stadium</a>, <a
-                    href="/wiki/Edinburgh" title="Edinburgh">Edinburgh</a></td>
-            <td align="center">12 – 8</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/23px-Flag_of_Scotland.svg.png"
-                                            width="23" height="14" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/35px-Flag_of_Scotland.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/46px-Flag_of_Scotland.svg.png 2x"
-                                            data-file-width="1000" data-file-height="600"/>&#160;</span><a
-                    href="/wiki/Scotland_national_rugby_union_team"
-                    title="Scotland national rugby union team">Scotland</a></td>
-            <td><a href="/wiki/2013_Six_Nations_Championship" title="2013 Six Nations Championship">2013 Six Nations</a>
-            </td>
-        </tr>
-        <tr>
-            <th>127</th>
-            <td>10 March 2012</td>
-            <td><a href="/wiki/Aviva_Stadium" title="Aviva Stadium">Aviva Stadium</a>, <a href="/wiki/Dublin"
-                                                                                          title="Dublin">Dublin</a></td>
-            <td align="center">32 – 14</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"
-                                            width="23" height="15" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"
-                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a
-                    href="/wiki/Ireland_national_rugby_union_team" title="Ireland national rugby union team">Ireland</a>
-            </td>
-            <td><a href="/wiki/2012_Six_Nations_Championship" title="2012 Six Nations Championship">2012 Six Nations</a>
-            </td>
-        </tr>
-        <tr>
-            <th>126</th>
-            <td>6 August 2011</td>
-            <td><a href="/wiki/Murrayfield" title="Murrayfield">Murrayfield</a>, <a href="/wiki/Edinburgh"
-                                                                                    title="Edinburgh">Edinburgh</a></td>
-            <td align="center">10 – 6</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/23px-Flag_of_Scotland.svg.png"
-                                            width="23" height="14" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/35px-Flag_of_Scotland.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/46px-Flag_of_Scotland.svg.png 2x"
-                                            data-file-width="1000" data-file-height="600"/>&#160;</span><a
-                    href="/wiki/Scotland_national_rugby_union_team"
-                    title="Scotland national rugby union team">Scotland</a></td>
-            <td><a href="/wiki/2011_mid-year_rugby_test_series" class="mw-redirect"
-                   title="2011 mid-year rugby test series">2011 World Cup warm-up match</a></td>
-        </tr>
-        <tr>
-            <th>125</th>
-            <td>27 February 2011</td>
-            <td><a href="/wiki/Murrayfield_Stadium" title="Murrayfield Stadium">Murrayfield Stadium</a>, <a
-                    href="/wiki/Edinburgh" title="Edinburgh">Edinburgh</a></td>
-            <td align="center">18 – 21</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"
-                                            width="23" height="15" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"
-                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a
-                    href="/wiki/Ireland_national_rugby_union_team" title="Ireland national rugby union team">Ireland</a>
-            </td>
-            <td><a href="/wiki/2011_Six_Nations_Championship" title="2011 Six Nations Championship">2011 Six Nations</a>
-            </td>
-        </tr>
-        <tr>
-            <th>124</th>
-            <td>20 March 2010</td>
-            <td><a href="/wiki/Croke_Park" title="Croke Park">Croke Park</a>, <a href="/wiki/Dublin" title="Dublin">Dublin</a>
-            </td>
-            <td align="center">20 – 23</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/23px-Flag_of_Scotland.svg.png"
-                                            width="23" height="14" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/35px-Flag_of_Scotland.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/46px-Flag_of_Scotland.svg.png 2x"
-                                            data-file-width="1000" data-file-height="600"/>&#160;</span><a
-                    href="/wiki/Scotland_national_rugby_union_team"
-                    title="Scotland national rugby union team">Scotland</a></td>
-            <td><a href="/wiki/2010_Six_Nations_Championship" title="2010 Six Nations Championship">2010 Six Nations</a>
-            </td>
-        </tr>
-        <tr>
-            <th>123</th>
-            <td>14 March 2009</td>
-            <td><a href="/wiki/Murrayfield_Stadium" title="Murrayfield Stadium">Murrayfield Stadium</a>, <a
-                    href="/wiki/Edinburgh" title="Edinburgh">Edinburgh</a></td>
-            <td align="center">15 – 22</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"
-                                            width="23" height="15" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"
-                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a
-                    href="/wiki/Ireland_national_rugby_union_team" title="Ireland national rugby union team">Ireland</a>
-            </td>
-            <td><a href="/wiki/2009_Six_Nations_Championship" title="2009 Six Nations Championship">2009 Six Nations</a>
-            </td>
-        </tr>
-        <tr>
-            <th>122</th>
-            <td>23 February 2008</td>
-            <td><a href="/wiki/Croke_Park" title="Croke Park">Croke Park</a>, <a href="/wiki/Dublin" title="Dublin">Dublin</a>
-            </td>
-            <td align="center">34 – 13</td>
-            <td><span class="flagicon"><img alt=""
-                                            src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/23px-IRFU_flag.svg.png"
-                                            width="23" height="15" class="thumbborder"
-                                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/35px-IRFU_flag.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IRFU_flag.svg/45px-IRFU_flag.svg.png 2x"
-                                            data-file-width="1200" data-file-height="800"/>&#160;</span><a
-                    href="/wiki/Ireland_national_rugby_union_team" title="Ireland national rugby union team">Ireland</a>
-            </td>
-            <td><a href="/wiki/2008_Six_Nations_Championship" title="2008 Six Nations Championship">2008 Six Nations</a>
-            </td>
-        </tr>
+        {% for game in game %}
+            <tr>
+                <td>{{ game.date }}</td>
+                <td>{{ game.host }}</td>
+                <td>{{ game.teamA }}</td>
+                <td>{{ game.teamB }}</td>
+                <td>{{ game.scoreA }}</td>
+                <td>{{ game.scoreB }}</td>
+                <td>{{ game.competition }}</td>
+            </tr>
+        {% endfor %}
         </tbody>
     </table>
-
-    <h2 align="center">The Winner is Ireland !</h2>
-    <div align="center">
-    <image src = "../static/images/ireland.png"></image>
-    </div>
 {% endblock %}

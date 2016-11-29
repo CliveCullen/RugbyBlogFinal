@@ -3,45 +3,33 @@
 
 {% block content %}
 
-    <style>
-
-   .list {
-      position: absolute;
-       top:310px;
-       left: 800px;
-       color: red;
-       font-size: large;
-   }
-   </style>
-
 
     <div align="center">
-    <h2>Welcome to the store </h2>
-    <P>As we are funded buy our products to keep the site add free please take a look at our items</P>
+        <h2>Welcome to the store </h2>
+        <P>As we are funded buy our products to keep the site add free please take a look at our items</P>
     </div>
     <br>
 
-   <table class="table">
-       <thead>
-           <tr>
-               <th>Image</th>
-               <th>Title</th>
-               <th>Description</th>
-               <th>Price</th>
-               <th>Buy It Now</th>
-           </tr>
-       </thead>
-       <tbody>
-            {% for product in product %}
-               <tr>
-                   <td><img height="100" width="100" src="{{ MEDIA_URL }}{{ product.image }}"></td>
-                   <td>{{ product.title }}</td>
-                   <td>{{ product.description }}
-                   <td>{{ product.price }}</td>
-                   <td>{{ product.paypal_form.sandbox }}</td>
-               </tr>
-            {% endfor %}
-
-       </tbody>
-   </table>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Buy It Now</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for product in product %}
+            <tr>
+                <td><img height="100" width="100" src="{{ MEDIA_URL }}{{ product.image }}"></td>
+                <td>{{ product.title }}</td>
+                <td>{{ product.description }}
+                <td>{{ product.price }}</td>
+                <td>{{ product.paypal_form.sandbox }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}
