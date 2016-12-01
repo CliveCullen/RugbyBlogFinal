@@ -69,10 +69,15 @@ WSGI_APPLICATION = 'rugbyblog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+     #   'ENGINE': 'django.db.backends.sqlite3',
+      #  'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+
     }
 }
+CLEAR_DB_URL = os.environ.get("CLEARDB_DATABASE_URL", "")
+
+DATABASES['default'] = dj_database_url.parse(CLEAR_DB_URL)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
