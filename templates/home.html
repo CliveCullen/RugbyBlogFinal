@@ -27,16 +27,17 @@
     </div>
 
 
-    <div class="row">
-        <div class="col-md-5" align="center"><img id="team-1-img" src="{% static teamOne.image %}" height="600px"
-                                                  width="100%"></div>
-        <div class="col-md-2" align="center"><img src={% static 'images/vs.png' %} height="60px" width="60px"></div>
 
-        <div class="col-md-5" align="center"><img id="team-2-img" src="{% static teamTwo.image %}" height="600px"
-                                                  width="100%">
+    {% if teamOne %}
+        <div class="row">
+            <div class="col-md-5" align="center"><img id="team-1-img" src="{% static teamOne.image %}" height="600px"
+                                                      width="100%"></div>
+            <div class="col-md-2" align="center"><img src={% static 'images/vs.png' %} height="60px" width="60px"></div>
 
+            <div class="col-md-5" align="center"><img id="team-2-img" src="{% static teamTwo.image %}" height="600px"
+                                                      width="100%">
+            </div>
         </div>
-    </div>
 
     <div class="container" id="content">
 
@@ -109,7 +110,7 @@
     {#        </tr>#}
     {#    </table>#}
 
-    <h3 align=center>Last ten games</h3>
+    <h3 align=center>Recent Games</h3>
 
     {#    <h2 align="center">The Winner is Ireland !</h2>#}
     {#    <div align="center">#}
@@ -132,7 +133,7 @@
         </tr>
         </thead>
         <tbody>
-        {% for game in game %}
+        {% for game in games %}
             <tr>
                 <td>{{ game.date }}</td>
                 <td>{{ game.host }}</td>
@@ -145,4 +146,5 @@
         {% endfor %}
         </tbody>
     </table>
+    {% endif %}
 {% endblock %}
