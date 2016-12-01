@@ -1,1 +1,1 @@
-web: gunicorn rugbyblog:app
+web: gunicorn rugbyblog.wgsi:application
