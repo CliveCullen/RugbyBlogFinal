@@ -17,7 +17,3 @@ def head_to_head(request):
     return render(request, 'home.html', {'teamOne': teamOne,'teamTwo':teamTwo, 'games': games})
 
 
-# def Game(request):
-#     Game = game.objects.all()
-#     return render(request, "home.html",{"game":Game})
-#
