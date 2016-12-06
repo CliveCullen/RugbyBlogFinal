@@ -5,9 +5,9 @@
     <div class="row">
         <form method="GET" action="{% url 'head_to_head' %}">
             <div class="col-lg-12" align="center"><h1>Welcome to scrum cap </h1>
-            <h2>Where teams really go head to head</h2></div>
-            <div class="col-md-6" id="inputOne" align="center"><h1>Team One</h1></div>
-            <div class="col-md-6" id="InputTwo" align="center"><h1>Team Two</h1></div>
+                <h2>Where teams really go head to head</h2>
+                <h2>Choose your teams!</h2></div>
+
 
             <div class="col-md-6" id="team1" align="center">
                 <div class="form-group">
@@ -31,55 +31,58 @@
 
     {% if teamOne %}
         <div class="row">
-            <div class="col-md-5" align="center"><img id="team-1-img" src="{{ STATIC_URL }}{{ teamOne.image.url}}" height="400px"
+            <div class="col-md-5" align="center"><img id="team-1-img" src="{{ STATIC_URL }}{{ teamOne.image.url }}"
+                                                      height="400px"
                                                       width="100%"></div>
-            <div class="col-md-2" align="center"><img src="{% static 'images/vs.png' %}" height="60px" width="60px"></div>
+            <div class="col-md-2" align="center"><img src="{% static 'images/vs.png' %}" height="60px" width="60px">
+            </div>
 
-            <div class="col-md-5" align="center"><img id="team-2-img" src="{{ STATIC_URL }}{{ teamTwo.image.url}}" height="400px"
+            <div class="col-md-5" align="center"><img id="team-2-img" src="{{ STATIC_URL }}{{ teamTwo.image.url }}"
+                                                      height="400px"
                                                       width="100%">
             </div>
         </div>
 
-    <div class="container" id="content">
+        <div class="container" id="content">
 
-    </div>
+        </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous"></script>
-
-
-    <h3 align=center>Recent Games</h3>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+                integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+                crossorigin="anonymous"></script>
 
 
+        <h3 align=center>Recent Games</h3>
 
 
 
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Date</th>
-            <th>Host</th>
-            <th>TeamA</th>
-            <th>TeamB</th>
-            <th>ScoreA</th>
-            <th>ScoreB</th>
-            <th>Competition</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for game in games %}
+
+
+        <table class="table">
+            <thead>
             <tr>
-                <td>{{ game.date }}</td>
-                <td>{{ game.host }}</td>
-                <td>{{ game.teamA }}</td>
-                <td>{{ game.teamB }}</td>
-                <td>{{ game.scoreA }}</td>
-                <td>{{ game.scoreB }}</td>
-                <td>{{ game.competition }}</td>
+                <th>Date</th>
+                <th>Host</th>
+                <th>TeamA</th>
+                <th>TeamB</th>
+                <th>ScoreA</th>
+                <th>ScoreB</th>
+                <th>Competition</th>
             </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            {% for game in games %}
+                <tr>
+                    <td>{{ game.date }}</td>
+                    <td>{{ game.host }}</td>
+                    <td>{{ game.teamA }}</td>
+                    <td>{{ game.teamB }}</td>
+                    <td>{{ game.scoreA }}</td>
+                    <td>{{ game.scoreB }}</td>
+                    <td>{{ game.competition }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
     {% endif %}
 {% endblock %}
