@@ -3,6 +3,7 @@ from models import team
 from models import game
 from django.db.models import Q
 
+
 # Create your views here.
 def head_to_head(request):
     teamOneName = request.GET.get('teamOne').capitalize()
@@ -13,11 +14,5 @@ def head_to_head(request):
 
     games = game.objects.filter(teamA=teamOne.Name)
 
+    return render(request, 'home.html', {'teamOne': teamOne, 'teamTwo': teamTwo, 'games':games})
 
-    return render(request, 'home.html', {'teamOne': teamOne,'teamTwo':teamTwo, 'games': games})
-
-
-# def Game(request):
-#     Game = game.objects.all()
-#     return render(request, "home.html",{"game":Game})
-#
