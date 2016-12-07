@@ -20,7 +20,8 @@
                 <div class="row" id="posts">
                     <div class="col-xs-9">
                         <p>{{ post.content|truncatewords:30 }}</p>
-                        {{ post.published_date }}  Views {{ post.views }}
+                        <p>{{ post.published_date }}</p>
+                        <p>Views {{ post.views }}</p>
                         <p><strong> Tag</strong> {{ post.tag }}</p>
                         <button class="btn btn-default" onclick="location.href={{ post.id }}">Read More</button>
                         <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post</button>

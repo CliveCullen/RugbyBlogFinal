@@ -25,8 +25,8 @@
                             {% endif %}
                         </div>
                     </div>
-                        {{ post.published_date }}
-                        Views {{ post.views }}
+                        <p>{{ post.published_date }}</p>
+                        <p>Views {{ post.views }}</p>
                         <p><strong> Tag</strong> {{ post.tag }}</p>
                         <button class="btn btn-default" onclick="location.href='edit_post'">Edit</button>
                         <button class="btn btn-default" onclick="location.href='/blog/'">Back to Blog</button>
