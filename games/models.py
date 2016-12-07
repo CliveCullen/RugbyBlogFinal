@@ -8,7 +8,7 @@ class team(models.Model):
     Name = models.CharField(max_length=200)
     image = models.ImageField(upload_to="images", blank=True, null=True)
     rank = models.IntegerField()
-
+    
 
 
     def __unicode__(self):
@@ -17,7 +17,7 @@ class team(models.Model):
 
 class game(models.Model):
     date = models.DateField(blank=True, null=True)
-    host = models.Text()
+    host = models.TextField()
     teamA = models.TextField()
     teamB = models.TextField()
     scoreA = models.IntegerField()
