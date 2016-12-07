@@ -1,7 +1,7 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
 from models import team
 from models import game
-from django.db.models import Q
+
 
 
 # Create your views here.
@@ -13,6 +13,6 @@ def head_to_head(request):
     teamTwo = get_object_or_404(team, Name=teamTwoName)
 
     games = game.objects.filter(teamA=teamOne.Name,teamB=teamTwo.Name)
-
-    return render(request, 'home.html', {'teamOne': teamOne, 'teamTwo': teamTwo, 'games':games})
+    games2= game.objects.filter(teamA=teamTwo.Name,teamB=teamOne.Name)
+    return render(request, 'home.html', {'teamOne': teamOne, 'teamTwo': teamTwo, 'games':games, 'games2':games2})
 
