@@ -15,18 +15,17 @@ class team(models.Model):
 
 class game(models.Model):
     date = models.DateField(blank=True, null=True)
-    host = models.TextField()
-    teamA = models.TextField()
-    teamB = models.TextField()
-    scoreA = models.IntegerField()
-    scoreB = models.IntegerField()
+    homeTeam = models.TextField()
+    awayTeam = models.TextField()
+    homeScore = models.IntegerField()
+    awayScore = models.IntegerField()
     competition = models.TextField()
 
     def __unicode__(self):
-        return self.host + " vs " + self.teamB + "  " +self.competition
+        return self.homeTeam + " vs " + self.awayTeam + "  " + self.competition
 
 
-class overall(models.Model):
+'''class overall(models.Model):
     teamA = models.TextField()
     teamB = models.TextField()
     location = models.TextField(max_length=50)
@@ -38,4 +37,4 @@ class overall(models.Model):
     teamBPoints = models.IntegerField()
 
     def __unicode__(self):
-        return self.location
+        return self.location'''
