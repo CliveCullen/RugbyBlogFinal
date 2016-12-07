@@ -6,8 +6,9 @@
     {% load bootstrap_tags %}
 
     <div class="row" id="posts">
-    <hr>
-        
+        <hr>
+        <hr>
+
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form | as_bootstrap }}
