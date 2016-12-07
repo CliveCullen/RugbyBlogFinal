@@ -17,9 +17,9 @@ class team(models.Model):
 
 class game(models.Model):
     date = models.DateField(blank=True, null=True)
-    host = models.TextField()
-    teamA = models.TextField()
-    teamB = models.TextField()
+    host = team()
+    teamA = team()
+    teamB = team()
     scoreA = models.IntegerField()
     scoreB = models.IntegerField()
     competition = models.TextField()
