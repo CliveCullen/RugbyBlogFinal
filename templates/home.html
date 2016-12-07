@@ -22,7 +22,7 @@
             <div class="col-md-5" id="team1" align="center">
                 <div class="form-group">
                     <input type="text" class="form-control" id="inputOne" name="teamTwo"
-                           placeholder="Enter your first team here">
+                           placeholder="Enter your Second team here">
                 </div>
             </div>
 
@@ -69,7 +69,7 @@
             {% for game in games %}
                 <tr>
                     <td>{{ game.date }}</td>
-                    <td>{{ game.host }}<img id="team-1-img" src="{{ STATIC_URL }}{{ game.host.image.url }}" height="40px" width="10%"></td>
+                    <td>{{ game.host }}<img id="team-1-img" src="{{ STATIC_URL }}{{ teamA.image.url }}" height="40px" width="10%"></td>
                     <td>{{ game.scoreA }} - {{ game.scoreB }}</td>
                     <td>{{ game.teamB }}<img id="team-2-img" src="{{ STATIC_URL }}{{ teamB.image.url }}" height="40px" width="10%"></td>
                     <td>{{ game.competition }}</td>
@@ -78,7 +78,7 @@
             {% for game in games2 %}
               <tr>
                     <td>{{ game.date }}</td>
-                    <td>{{ game.host }}<img id="team-1-img" src="{{ STATIC_URL }}{{ host.image.url }}" height="40px" width="10%"></td>
+                    <td>{{ game.host }}<img id="team-1-img" src="{{ STATIC_URL }}{{ teamA.image.url }}" height="40px" width="10%"></td>
                     <td>{{ game.scoreA }} - {{ game.scoreB }}</td>
                     <td>{{ game.teamB }}<img id="team-2-img" src="{{ STATIC_URL }}{{ teamB.image.url }}" height="40px" width="10%"></td>
                     <td>{{ game.competition }}</td>
