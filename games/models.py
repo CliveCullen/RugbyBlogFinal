@@ -23,7 +23,7 @@ class game(models.Model):
     competition = models.TextField()
 
     def __unicode__(self):
-        return self.host + " vs " + self.teamB
+        return self.host + " vs " + self.teamB + self.competition
 
 
 class overall(models.Model):
