@@ -69,18 +69,18 @@
             {% for game in games %}
                 <tr>
                     <td>{{ game.date }}</td>
-                    <td>{{ game.host }}<img src="{{ STATIC_URL }}{{ teamA.image.url }}" height="40px" width="10%"></td>
+                    <td>{{ game.host }}</td>
                     <td>{{ game.scoreA }} - {{ game.scoreB }}</td>
-                    <td>{{ game.teamB }}<img src="{{ STATIC_URL }}{{ teamB.image.url }}" height="40px" width="10%"></td>
+                    <td>{{ game.teamB }}</td>
                     <td>{{ game.competition }}</td>
                 </tr>
             {% endfor %}
             {% for game in games2 %}
               <tr>
                     <td>{{ game.date }}</td>
-                    <td>{{ game.host }}<img src="{{ STATIC_URL }}{{ teamA.image.url }}" height="40px" width="10%"></td>
+                    <td>{{ game.host }}</td>
                     <td>{{ game.scoreA }} - {{ game.scoreB }}</td>
-                    <td>{{ game.teamB }}<img src="{{ STATIC_URL }}{{ teamB.image.url }}" height="40px" width="10%"></td>
+                    <td>{{ game.teamB }}</td>
                     <td>{{ game.competition }}</td>
                 </tr>
             {% endfor %}
