@@ -69,18 +69,18 @@
             {% for game in games %}
                 <tr>
                     <td>{{ game.date }}</td>
-                    <td>{{ game.homeTeam }}<img id="team-1-img" src="{{ STATIC_URL }}{{ teamOne.image.url }}" height="40px" width="15%"></td>
+                    <td>{{ game.homeTeam }}<img id="team-1-img" src="{{ STATIC_URL }}{{ homeTeam.image.url }}" height="40px" width="15%"></td>
                     <td>{{ game.homeScore }} - {{ game.awayScore }}</td>
-                    <td>{{ game.awayTeam }}<img id="team-2-img" src="{{ STATIC_URL }}{{ teamTwo.image.url }}" height="40px" width="15%"></td>
+                    <td>{{ game.awayTeam }}<img id="team-2-img" src="{{ STATIC_URL }}{{ awayTeam.image.url }}" height="40px" width="15%"></td>
                     <td>{{ game.competition }}</td>
                 </tr>
             {% endfor %}
             {% for game in games2 %}
               <tr>
                     <td>{{ game.date }}</td>
-                    <td>{{ game.homeTeam }}<img id="team-1-img" src="{{ STATIC_URL }}{{ teamOne.image.url }}" height="40px" width="15%"></td>
+                    <td>{{ game.homeTeam }}<img id="team-1-img" src="{{ STATIC_URL }}{{ homeTeam.image.url }}" height="40px" width="15%"></td>
                     <td>{{ game.homeScore }} - {{ game.awayScore }}</td>
-                    <td>{{ game.awayTeam }}<img id="team-2-img" src="{{ STATIC_URL }}{{ teamTwo.image.url }}" height="40px" width="15%"></td>
+                    <td>{{ game.awayTeam }}<img id="team-2-img" src="{{ STATIC_URL }}{{ awayTeam.image.url }}" height="40px" width="15%"></td>
                     <td>{{ game.competition }}</td>
                 </tr>
             {% endfor %}
