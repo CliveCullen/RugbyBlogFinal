@@ -71,13 +71,13 @@
             {% for game in games %}
                 <tr>
                     <td>{{ game.date }}</td>
-                    <td>{{ teamOne.image.url }}</td>
+                    <td>{{ STATIC_URL }}{{ teamOne.image.url }}</td>
                     <td>{{ game.host }}</td>
                     <td>{{ game.scoreA }}</td>
                     <td> - </td>
                     <td>{{ game.scoreB }}</td>
                     <td>{{ game.teamB }}</td>
-                    <td>{{ teamTwo.image.url }}</td>
+                    <td>{{ STATIC_URL }}{{ teamTwe.image.url }}</td>
                     <td>{{ game.competition }}</td>
                 </tr>
             {% endfor %}
