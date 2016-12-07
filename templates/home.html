@@ -59,11 +59,11 @@
             <thead>
             <tr>
                 <th>Date</th>
-                <th>Host</th>
-                <th>TeamA</th>
-                <th>TeamB</th>
-                <th>ScoreA</th>
-                <th>ScoreB</th>
+                <th></th>
+                <th>Home</th>
+                <th>Sco</th>
+                <th>re </th>
+                <th>Away</th>
                 <th>Competition</th>
             </tr>
             </thead>
@@ -71,11 +71,13 @@
             {% for game in games %}
                 <tr>
                     <td>{{ game.date }}</td>
+                    <td>{{ teamOne.image }}</td>
                     <td>{{ game.host }}</td>
-                    <td>{{ game.teamA }}</td>
-                    <td>{{ game.teamB }}</td>
                     <td>{{ game.scoreA }}</td>
+                    <td>"-"</td>
                     <td>{{ game.scoreB }}</td>
+                    <td>{{ game.teamB }}</td>
+                    <td>{{ teamTwo.image }}</td>
                     <td>{{ game.competition }}</td>
                 </tr>
             {% endfor %}
