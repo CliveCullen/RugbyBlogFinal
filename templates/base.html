@@ -25,11 +25,12 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
 
+    }
 
+    .container {
+        background: rgba(0, 0, 0, 0.5);
     }
-    .container{
-         background: rgba(0, 0, 0, 0.5);
-    }
+
     .col-md-6 {
         color: white;
     }
@@ -67,6 +68,14 @@
 
     }
 
+    #results {
+        width: 400px;
+        table-layout: fixed;
+    }
+
+    td:empty {
+        display: none;
+    }
 
 </style>
 <body>
