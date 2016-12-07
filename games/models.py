@@ -8,6 +8,7 @@ class team(models.Model):
     Name = models.CharField(max_length=200)
     image = models.ImageField(upload_to="images", blank=True, null=True)
     rank = models.IntegerField()
+    venue = models.TextField()
 
 
     def __unicode__(self):
