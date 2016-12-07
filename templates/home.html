@@ -72,13 +72,14 @@
                 <tr>
                     <td>{{ game.date }}</td>
 
-                    <td><img id="team-1-img" src="{{ STATIC_URL }}{{ teamOne.image.url }}" height="40px" width="10%">{{ game.host }}</td>
+                    <td><img id="team-1-img" src="{{ STATIC_URL }}{{ teamOne.image.url }}" height="40px"
+                             width="10%">{{ game.host }}</td>
                     <td>{{ game.scoreA }}</td>
                     <td> -</td>
                     <td>{{ game.scoreB }}</td>
                     <td>{{ game.teamB }}</td>
-                    <td><img id="team-2-img" src="{{ STATIC_URL }}{{ teamTwo.image.url }}" height="40px" width="10%"></td>
-                    <td>{{ teamOne.venue }}</td>
+                    <td><img id="team-2-img" src="{{ STATIC_URL }}{{ teamTwo.image.url }}" height="40px" width="10%"> </td>
+                   
                     <td>{{ game.competition }}</td>
                 </tr>
             {% endfor %}
