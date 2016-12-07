@@ -61,8 +61,8 @@
                 <th>Date</th>
                 <th></th>
                 <th>Home</th>
-                <th>Sco</th>
-                <th>re </th>
+                <th></th>
+                <th>score </th>
                 <th>Away</th>
                 <th>Competition</th>
             </tr>
@@ -71,13 +71,13 @@
             {% for game in games %}
                 <tr>
                     <td>{{ game.date }}</td>
-                    <td>{{ teamOne.image }}</td>
+                    <td>{{ teamOne.image.url }}</td>
                     <td>{{ game.host }}</td>
                     <td>{{ game.scoreA }}</td>
-                    <td>"-"</td>
+                    <td> - </td>
                     <td>{{ game.scoreB }}</td>
                     <td>{{ game.teamB }}</td>
-                    <td>{{ teamTwo.image }}</td>
+                    <td>{{ teamTwo.image.url }}</td>
                     <td>{{ game.competition }}</td>
                 </tr>
             {% endfor %}
