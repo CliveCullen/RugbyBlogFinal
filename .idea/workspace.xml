@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e630c9be-b609-4dfe-ad8a-9dc12fc42635" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blogpostform.html" afterPath="$PROJECT_DIR$/blog/templates/blogpostform.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/postdetail.html" afterPath="$PROJECT_DIR$/blog/templates/postdetail.html" />
     </list>
     <ignored path="rugbyblog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,46 +37,28 @@
     <favorites_list name="rugbyblog" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.77111113">
+    <splitter split-orientation="horizontal" split-proportion="0.47">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-              <file leaf-file-name="postdetail.html" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/blog/templates/postdetail.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="500">
-                      <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="blogpostform.html" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/blog/templates/blogpostform.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="225">
-                      <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+          <file leaf-file-name="postdetail.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blog/templates/postdetail.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="445">
+                  <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="blogposts.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/blog/templates/blogposts.html">
+          <file leaf-file-name="blogpostform.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blog/templates/blogpostform.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="226">
-                  <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+                <state relative-caret-position="225">
+                  <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -148,8 +130,8 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/games/models.py" />
         <option value="$PROJECT_DIR$/blog/templates/blogposts.html" />
-        <option value="$PROJECT_DIR$/blog/templates/postdetail.html" />
         <option value="$PROJECT_DIR$/blog/templates/blogpostform.html" />
+        <option value="$PROJECT_DIR$/blog/templates/postdetail.html" />
       </list>
     </option>
   </component>
@@ -1073,26 +1055,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blogpostform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blogposts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state relative-caret-position="382">
+          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/postdetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blogpostform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="445">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding />
         </state>
       </provider>
