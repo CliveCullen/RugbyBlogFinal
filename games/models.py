@@ -25,7 +25,7 @@ class game(models.Model):
         return self.homeTeam + " vs " + self.awayTeam + "  " + self.competition
 
 
-'''class overall(models.Model):
+class overall(models.Model):
     teamA = models.TextField()
     teamB = models.TextField()
     location = models.TextField(max_length=50)
@@ -37,4 +37,4 @@ class game(models.Model):
     teamBPoints = models.IntegerField()
 
     def __unicode__(self):
-        return self.location'''
+        return self.location
