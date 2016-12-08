@@ -58,11 +58,11 @@
         <table class="table" id="results">
             <thead>
             <tr>
-                <th>Date</th>
-                <th>Home</th>
-                <th>score</th>
-                <th>Away</th>
-                <th>Competition</th>
+                <th align="center">Date</th>
+                <th align="center">Home</th>
+                <th align="center">score</th>
+                <th align="center">Away</th>
+                <th align="center">Competition</th>
             </tr>
             </thead>
             <tbody>
@@ -85,8 +85,8 @@
                     <td>{{ game.date }}</td>
                     <td>{{ game.host }}</td>
                     <td><img src="{{ STATIC_URL }}{{ teamTwo.image.url }}"
-                                              height="40px"
-                                              width="15%">{{ game.scoreA }} - {{ game.scoreB }}<img
+                             height="40px"
+                             width="15%">{{ game.scoreA }} - {{ game.scoreB }}<img
                             src="{{ STATIC_URL }}{{ teamOne.image.url }}"
                             height="40px"
                             width="15%"></td>
