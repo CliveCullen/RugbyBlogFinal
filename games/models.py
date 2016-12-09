@@ -29,7 +29,7 @@ class game(models.Model):
 
 
 class overall(models.Model):
-
+    Name = models.CharField(max_length=200)
     teamA = models.TextField()
     teamB = models.TextField()
     played = models.IntegerField()
