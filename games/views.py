@@ -13,10 +13,15 @@ def head_to_head(request):
     teamOne = get_object_or_404(team, Name=teamOneName)
     teamTwo = get_object_or_404(team, Name=teamTwoName)
 
+<<<<<<< HEAD
     g1 = game.objects.filter(teamA=teamOne.Name, teamB=teamTwo.Name)
     g2 = game.objects.filter(teamA=teamTwo.Name, teamB=teamOne.Name)
 
     return render(request,'home.html',{'teamOne':teamOne,'teamTwo':teamTwo,'games':g1,'games2':g2})
 
+=======
+    games = game.objects.filter(teamA=teamOne.Name, teamB=teamTwo.Name).order_by("-date")
+    games2 = game.objects.filter(teamA=teamTwo.Name, teamB=teamOne.Name).order_by("-date")
+>>>>>>> parent of e066c17... still not in order
 
 
