@@ -8,15 +8,17 @@ def head_to_head(request):
     teamOneName = request.GET.get('teamOne').capitalize()
     teamTwoName = request.GET.get('teamTwo').capitalize()
 
-    h = teamOneName + " " + teamTwoName + " Overall"
+    h1 = get_object_or_404(overall, Name= teamOneName + " " + teamTwoName + " Overall" )
+    h2 = get_object_or_404(overall, Name= teamOneName + " " + teamTwoName + " Overall" )
+
 
     teamOne = get_object_or_404(team, Name=teamOneName)
     teamTwo = get_object_or_404(team, Name=teamTwoName)
 
-    games = game.objects.filter(teamA=teamOne.Name, teamB=teamTwo.Name)
-    games2 = game.objects.filter(teamA=teamTwo.Name, teamB=teamOne.Name)
+    g1 = game.objects.filter(teamA=teamOne.Name, teamB=teamTwo.Name)
+    g2 = game.objects.filter(teamA=teamTwo.Name, teamB=teamOne.Name)
 
-    return render(request, 'home.html', {'teamOne': teamOne, 'teamTwo': teamTwo, 'games':games, 'games2':games2, 'h':h})
+    return render(request,'home.html',{'teamOne':teamOne,'teamTwo':teamTwo,'games':g1,'games2':g2,'h1':h1,'h2':h2})
 
 
 
