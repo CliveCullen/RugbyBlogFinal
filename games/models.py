@@ -39,4 +39,4 @@ class overall(models.Model):
     teamBPoints = models.IntegerField()
 
     def __unicode__(self):
-        return self.location
+        return self.teamA + " " + self.teamB + " Overall"
