@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
-from models import team, game
+from models import team, game, history
 
 
 
