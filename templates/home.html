@@ -48,7 +48,7 @@
         <div class="container" id="content">
 
         </div>
-         <h3 align=center>OverAll</h3>
+        <h3 align=center>OverAll</h3>
 
 
 
@@ -58,27 +58,27 @@
             <thead>
             <tr>
                 <th>Played</th>
-                <th>Won by </th>
-                <th>won by</th>
+                <th>Won by <img src="{{ STATIC_URL }}{{ teamOne.image.url }}" height="40px"
+                                width="15%"></th>
+                <th>won by <img
+                        src="{{ STATIC_URL }}{{ teamTwo.image.url }}"
+                        height="40px"
+                        width="15%"></th>
                 <th>Drawn</th>
                 <th>team A points</th>
                 <th>team A points</th>
             </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>{{ overall.played }}</td>
-                    <td>{{ overall.wonByTeamA }}<img src="{{ STATIC_URL }}{{ teamOne.image.url }}"
-                             height="40px"
-                             width="15%"></td>
-                    <td>{{ overall.wonByTeamB }}<img
-                            src="{{ STATIC_URL }}{{ teamTwo.image.url }}"
-                            height="40px"
-                            width="15%"></td>
-                    <td>{{ overall.drawn }}</td>
-                    <td>{{ overall.teamAPoints }}</td>
-                    <td>{{ overall.teamBPoints }}</td>
-                </tr>
+            <tr>
+                <td>{{ overall.played }}</td>
+                <td>{{ overall.wonByTeamA }}
+                </td>
+                <td>{{ overall.wonByTeamB }}</td>
+                <td>{{ overall.drawn }}</td>
+                <td>{{ overall.teamAPoints }}</td>
+                <td>{{ overall.teamBPoints }}</td>
+            </tr>
             </tbody>
         </table>
 

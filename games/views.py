@@ -17,4 +17,4 @@ def head_to_head(request):
     return render(request, 'home.html', {'teamOne': teamOne, 'teamTwo': teamTwo, 'games': games, 'games2': games2})
 
 
-    
+
