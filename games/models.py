@@ -28,16 +28,3 @@ class game(models.Model):
         return self.host + " vs " + self.teamB + "  " +self.competition
 
 
-class overall(models.Model):
-    Name = models.CharField(max_length=200)
-    teamA = models.TextField()
-    teamB = models.TextField()
-    played = models.IntegerField()
-    wonByTeamA = models.IntegerField()
-    wonByTeamB = models.IntegerField()
-    drawn = models.IntegerField()
-    teamAPoints = models.IntegerField()
-    teamBPoints = models.IntegerField()
-
-    def __unicode__(self):
-        return self.teamA + " " + self.teamB + " Overall"
