@@ -14,7 +14,7 @@ def head_to_head(request):
     games = game.objects.filter(teamA=teamOne.Name, teamB=teamTwo.Name)
     games2 = game.objects.filter(teamA=teamTwo.Name, teamB=teamOne.Name)
 
-    history = get_object_or_404(overall,teamOneName + " " + teamTwoName + " Overall")
+    history = get_object_or_404(overall,(teamOneName + " " + teamTwoName + " Overall"))
 
     return render(request, 'home.html', {'teamOne': teamOne, 'teamTwo': teamTwo, 'games': games, 'games2': games2, 'overall':history})
 
