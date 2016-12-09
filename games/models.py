@@ -31,7 +31,6 @@ class game(models.Model):
 class overall(models.Model):
     teamA = models.TextField()
     teamB = models.TextField()
-    location = models.TextField(max_length=50)
     played = models.IntegerField()
     wonByTeamA = models.IntegerField()
     wonByTeamB = models.IntegerField()
