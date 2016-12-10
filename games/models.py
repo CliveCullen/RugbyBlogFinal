@@ -27,14 +27,15 @@ class game(models.Model):
     def __unicode__(self):
         return self.host + " vs " + self.teamB + "  " +self.competition
 
-class history(models.Model):
+
+class History(models.Model):
     teamA = models.TextField()
     teamB = models.TextField()
-    wonbyteamA = models.IntegerField()
-    wonbyteamB = models.IntegerField()
-    drawn= models.IntegerField()
-    teamApoints = models.IntegerField()
-    teamBpoints = models.IntegerField()
+    wonByTeamA = models.IntegerField()
+    wonByTeamB = models.IntegerField()
+    drawn = models.IntegerField()
+    teamAPoints = models.IntegerField()
+    teamBPoints = models.IntegerField()
 
     def __unicode__(self):
         return self.teamA + " " + self.teamB + " History"

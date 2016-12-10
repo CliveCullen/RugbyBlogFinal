@@ -1,6 +1,5 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
-from models import team, game, history
-
+from models import team, game, History
 
 
 # Create your views here.
@@ -19,6 +18,6 @@ def head_to_head(request):
 
     return render(request,'home.html',{'teamOne':teamOne,'teamTwo':teamTwo,'games':games,'games2':games2})
 
- 
+
 
 
