@@ -5,7 +5,32 @@
 
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    var teams = [
+      "New Zealand",
+      "England",
+      "Australia",
+      "Ireland",
+      "Wales",
+      "South Africa",
+      "Scotland",
+      "France",
+      "Argentina",
+      "Fiji",
+      "Japan",
+      "Tonga",
+      "Samoa",
+      "Georgia",
+      "Italy"
+    ];
+    $( "#inputOne" ).autocomplete({
+      source: teams
+    });
+  } );
+  </script>
 </head>
 <style type="text/css">
 
@@ -61,7 +86,7 @@
         padding-right: 0px;
         padding-left: 0px;
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
     }
 
     footer {
@@ -72,12 +97,11 @@
     #posts {
         color: white;
 
-
     }
 
     #results {
         width: 90%;
-        table-layout:fixed;
+        table-layout: fixed;
     }
 
     td:empty {
