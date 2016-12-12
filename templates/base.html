@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<head>
+<head xmlns="http://www.w3.org/1999/html">
     <title>Rugby Blog</title>
 
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -41,7 +41,14 @@
             });
         });
     </script>
-
+    <script>
+        $('tr.Entries').each(function () {
+            var t = this.cells[1].textContent.split('-');
+            $(this).data('_ts', new Date(t[2], t[1] - 1, t[0]).getTime());
+        }).sort(function (a, b) {
+            return $(a).data('_ts') < $(b).data('_ts');
+        }).appendTo('tbody');
+    </script>
 </head>
 <style type="text/css">
 

@@ -18,7 +18,7 @@ def head_to_head(request):
     games2= game.objects.filter(teamA=teamTwo.Name, teamB=teamOne.Name).order_by('-date')
 
 
-            
+
 
     return render(request,'home.html',{'teamOne':teamOne,'teamTwo':teamTwo,'games':games,'games2':games2})
 

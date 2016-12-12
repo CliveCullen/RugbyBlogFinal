@@ -92,7 +92,7 @@
             </thead>
             <tbody>
             {% for game in games %}
-                <tr>
+                <tr class="Entries">
                     <td>{{ game.date }}</td>
                     <td>{{ game.host }}</td>
                     <td><img src="{{ STATIC_URL }}{{ teamOne.image.url }}"
@@ -106,7 +106,7 @@
                 </tr>
             {% endfor %}
             {% for game in games2 %}
-                <tr>
+                <tr class="Entries">
                     <td>{{ game.date }}</td>
                     <td>{{ game.host }}</td>
                     <td><img src="{{ STATIC_URL }}{{ teamTwo.image.url }}"
