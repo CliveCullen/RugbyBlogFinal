@@ -14,8 +14,9 @@ def head_to_head(request):
     teamTwo = get_object_or_404(team, Name=teamTwoName)
 
 
-    games = game.objects.filter(teamA=teamOne.Name, teamB=teamTwo.Name).order_by('-date')
-    games2= game.objects.filter(teamA=teamTwo.Name, teamB=teamOne.Name).order_by('-date')
+    games = game.objects.filter(teamA=teamOne.Name, teamB=teamTwo.Name)
+    games2= game.objects.filter(teamA=teamTwo.Name, teamB=teamOne.Name)
+
 
 
 
