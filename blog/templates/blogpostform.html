@@ -2,7 +2,7 @@
 {% load static from staticfiles %}
 {% load gravatar %}
 {% block content %}
-
+<div class="container" id="content">
     {% load bootstrap_tags %}
 
     <div class="row" id="results">
@@ -16,4 +16,6 @@
             <button class="btn btn-default" onclick="location.href='/blog/'">Back to Blog</button>
         </form>
     </div>
+
 {% endblock %}
+</div>
