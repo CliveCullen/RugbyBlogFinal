@@ -17,7 +17,7 @@
                 </a>
 
             </div>
-            <div class="col-md-10 col-sm-9">
+            <div class="col-md-6 col-sm-9">
 
                 <h3>{{ post.title }}</h3>
                 <div class="row" id="results">
@@ -30,6 +30,12 @@
                         <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post</button>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                {% if post.image %}
+                    <img src="/media/{{ post.image }}" height="30px" width="30px">
+                {% endif %}
             </div>
         </div>
         <hr>
