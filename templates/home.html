@@ -100,7 +100,7 @@
                     <td>{{ game.date }}</td>
                     <td>{{ game.host }}</td>
                     <td>
-                        <img src="{{ STATIC_URL }}{{ game.host.team.image.url }}"
+                        <img src="{{ STATIC_URL }} {{game.host}}.{{team.image.url }}"
                              height="45px"
                              width="15%">
                         {{ game.scoreA }} - {{ game.scoreB }}
