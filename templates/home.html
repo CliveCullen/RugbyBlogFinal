@@ -99,17 +99,16 @@
                 <tr>
                     <td>{{ game.date }}</td>
                     <td>{{ game.host }}</td>
-                    <td><img src="{{ STATIC_URL }}{{ game.host}}.image.url }}"
+                    <td><img src="{{ STATIC_URL }}{{ host.image.url }}"
                              height="45px"
                              width="15%">{{ game.scoreA }} - {{ game.scoreB }}<img
-                            src="{{ STATIC_URL }}{{ teamTwo.image.url }}"
+                            src="{{ STATIC_URL }}{{ away.image.url }}"
                             height="45px"
                             width="15%"></td>
                     <td>{{ game.teamB }}</td>
                     <td>{{ game.competition }}</td>
                 </tr>
             {% endfor %}
-{#
         </table>
     {% endif %}
 {% endblock %}
