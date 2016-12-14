@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<head xmlns="http://www.w3.org/1999/html">
+<head>
     <title>Rugby Blog</title>
 
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         $(function () {
             var teams = [
@@ -85,8 +85,7 @@
     }
 
     .container {
-{#        background: rgba(0, 0, 0, 0.5);#}
-        padding-right: 0px;
+    {#        background: rgba(0, 0, 0, 0.5);#} padding-right: 0px;
         padding-left: 0px;
         margin-left: auto;
         margin-right: auto;
@@ -127,12 +126,19 @@
         width: 25%;
         table-layout: fixed;
     }
-    @media (max-width:360px) {
-        li,a{
+    
+
+    @media screen
+    and (device-width: 360px)
+    and (device-height: 640px)
+    and (-webkit-device-pixel-ratio: 4)
+    and (orientation: portrait) {
+
+        /* Style */
+        li, a {
             font-size: 30px;
         }
     }
-
 </style>
 <body>
 <div id="masthead">
