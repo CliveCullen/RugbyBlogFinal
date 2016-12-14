@@ -13,11 +13,7 @@ def head_to_head(request):
     teamOne = get_object_or_404(team, Name=teamOneName)
     teamTwo = get_object_or_404(team, Name=teamTwoName)
 
-
-    #games = game.objects.filter(teamA=teamOne.Name, teamB=teamTwo.Name)
-    #games2= game.objects.filter(teamA=teamTwo.Name, teamB=teamOne.Name)
-
-    games = game.objects.filter(Q(teamA=teamOne.Name, teamB=teamTwo.Name) | Q(teamA=teamTwo.Name, teamB=teamOne.Name))
+    games = game.objects.filter(Q(teamA=teamOne.Name,teamB=teamTwo.Name)|Q(teamA=teamTwo.Name,teamB=teamOne.Name)).order_by('-date')
 
 
     return render(request,'home.html',{'teamOne':teamOne,'teamTwo':teamTwo,'games':games})
