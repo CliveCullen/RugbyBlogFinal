@@ -2,7 +2,8 @@
 {% load bootstrap_tags %}
 
 {% block content %}
-
+     <hr>
+    <div class="container" id="content" align="center">
     <form role="form" method="post" action="{% url 'register' %}">
         <h4 align="center">Create a new account</h4>
         {% csrf_token %}
@@ -13,4 +14,5 @@
 
         </div>
     </form>
+    </div>
 {% endblock %}
