@@ -31,8 +31,8 @@
                         <p>{{ post.published_date }}</p>
                         <p>Views <span class="badge">{{ post.views }}</span></p>
                         <p><strong> Tag</strong> {{ post.tag }}</p>
-                        <button class="btn btn-default" onclick="location.href='edit_post'">Edit</button>
-                        <button class="btn btn-default" onclick="location.href='/blog/'">Back to Blog</button>
+                        <button class="btn btn-default" onclick="location.href='edit_post'"id="ball">Edit</button>
+                        <button class="btn btn-default" onclick="location.href='/blog/'"id="ball">Back to Blog</button>
 
                         <p>{% load disqus_tags %}
                             {% set_disqus_title post.title %}
