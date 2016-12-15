@@ -9,7 +9,7 @@
         <div class="row" id="results">
 
 
-            <div class="col-md-2 col-sm-3 col-xs-3 text-center">
+            <div class="col-md-2 col-sm-3 text-center">
                 <a class="story-img" href="#">
                     <img src="{% gravatar_url post.author.email 150 %}"
                          style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;"
@@ -17,32 +17,26 @@
                 </a>
 
             </div>
-            <div class="col-md-6 col-sm-9 col-xs-9">
+            <div class="col-md-6 col-sm-9">
 
                 <h3>{{ post.title }}</h3>
                 <div class="row" id="results">
+                    <div class="col-xs-9">
                         <p>{{ post.content|truncatewords:30 }}</p>
-                    </div>
-                    <div class="row" id="results">
                         <p>{{ post.published_date }}</p>
-                    </div>
-                    <div class="row" id="results">
                         <p>Views <span class="badge">{{ post.views }}</span></p>
                         <p><strong> Tag</strong> {{ post.tag }}</p>
-                    </div>
-                    <div class="row"id="results">
-                        {% if post.image %}
-                            <img src="/media/{{ post.image }}" height="80%" width="80%">
-                        {% endif %}
-                    </div>
-                    <div class="row" id="results">
                         <button class="btn btn-default" onclick="location.href={{ post.id }}">Read More</button>
                         <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post</button>
                     </div>
                 </div>
             </div>
 
-
+            <div class="col-md-4 text-center">
+                {% if post.image %}
+                    <img src="/media/{{ post.image }}" height="80%" width="80%">
+                {% endif %}
+            </div>
         </div>
         <hr>
     {% endfor %}
