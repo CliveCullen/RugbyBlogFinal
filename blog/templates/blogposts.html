@@ -3,38 +3,42 @@
 {% load gravatar %}
 {% block content %}
     <div class="container" id="content">
-        <hr>
-        <hr>
-        {% for post in posts %}
-            <div class="row" id="results">
+    <hr>
+    <hr>
+    {% for post in posts %}
+        <div class="row" id="results">
 
-                <div class="col-md-12 col-sm-12" id="NonOverFlow">
-                    <a class="story-img" href="#">
-                        <img src="{% gravatar_url post.author.email 150 %}"
-                             style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;"
-                             class="img-circle">
-                    </a>
 
-                    <h3 class="col-sm" align="center">{{ post.title }}</h3>
-                    <div class="row" id="results">
-                        <div class="col-xs-12">
-                            <p>{{ post.content|truncatewords:30 }}</p>
-                            <p>{{ post.published_date }}</p>
-                            <p>Views <span class="badge">{{ post.views }}</span></p>
-                            <p><strong> Tag</strong> {{ post.tag }}
-
-                            <div class="col-sm" align="center">
-                                <button class="btn btn-default" onclick="location.href={{ post.id }}">Read More</button>
-                                <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="col-md-2 col-sm-3 text-center">
+                <a class="story-img" href="#">
+                    <img src="{% gravatar_url post.author.email 150 %}"
+                         style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;"
+                         class="img-circle">
+                </a>
 
             </div>
-            <hr>
-        {% endfor %}
-    </div>
+            <div class="col-md-8 col-sm-9">
+
+                <h3>{{ post.title }}</h3>
+                <div class="row" id="results">
+                    <div class="col-xs-9">
+                        <p>{{ post.content|truncatewords:30 }}</p>
+                        <p>{{ post.published_date }}</p>
+                        <p>Views <span class="badge">{{ post.views }}</span></p>
+                        <p><strong> Tag</strong> {{ post.tag }}</p>
+                        <button class="btn btn-default" onclick="location.href={{ post.id }}">Read More</button>
+                        <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 text-center">
+                {% if post.image %}
+                    <img src="/media/{{ post.image }}" height="80%" width="80%">
+                {% endif %}
+            </div>
+        </div>
+        <hr>
+    {% endfor %}
 {% endblock %}
+</div>
