@@ -21,7 +21,7 @@
                 <h3>{{ post.title }}</h3>
                 <div class="row" id="results">
                     <div class="col-xs-9">
-                        <p>{{ post.content|truncateletters:30 }}</p>
+                        <p>{{ post.content|truncatewords:30 }}</p>
                         <p>{{ post.published_date }}</p>
                         <p>Views <span class="badge">{{ post.views }}</span></p>
                         <p><strong> Tag</strong> {{ post.tag }}</p>
