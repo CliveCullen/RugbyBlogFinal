@@ -25,11 +25,6 @@
                             <p>{{ post.published_date }}</p>
                             <p>Views <span class="badge">{{ post.views }}</span></p>
                             <p><strong> Tag</strong> {{ post.tag }}</p>
-                            <div class="col-md-2 text-center">
-                                {% if post.image %}
-                                    <p><img src="/media/{{ post.image }}" height="80%" width="80%"></p>
-                                {% endif %}
-                            </div>
                             <button class="btn btn-default" onclick="location.href={{ post.id }}">Read More</button>
                             <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post
                             </button>
