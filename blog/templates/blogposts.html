@@ -25,18 +25,22 @@
                         <p>{{ post.content|truncatewords:30 }}</p>
                     </div>
                     <div class="row" id="results">
+                         <div class="col-xs-12">
                         <p>{{ post.published_date }}</p>
                     </div>
                     <div class="row" id="results">
+                         <div class="col-xs-12">
                         <p>Views <span class="badge">{{ post.views }}</span></p>
                         <p><strong> Tag</strong> {{ post.tag }}</p>
                     </div>
                     <div class="row"id="results">
+                     <div class="col-xs-12">
                         {% if post.image %}
                             <img src="/media/{{ post.image }}" height="80%" width="80%">
                         {% endif %}
                     </div>
                     <div class="row" id="results">
+                         <div class="col-xs-12">
                         <button class="btn btn-default" onclick="location.href={{ post.id }}">Read More</button>
                         <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post</button>
                     </div>
