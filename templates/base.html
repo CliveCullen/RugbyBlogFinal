@@ -199,7 +199,7 @@
                                 <li><a href="/blog">Blog</a></li>
                                 <li><a href="/products/">Products</a></li>
                                 <li><a href="/logout/"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
-                                <a class="navbar-brand">{% block user %}{% endblock %}</a>
+                                <a class="navbar-brand"> <p>Welcome Back {{ user.email }} </p></a>
                             {% else %}
                                 <li class="active"><a href="/home/">Home</a>
                                 <li><a href="/products/">Products</a></li>
