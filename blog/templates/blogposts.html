@@ -37,6 +37,11 @@
                     <img src="/media/{{ post.image }}" height="80%" width="80%">
                 {% endif %}
             </div>
+            <div class="col-sm-2 text-center">
+                {% if post.image %}
+                    <img src="/media/{{ post.image }}" height="80px" width="80px">
+                {% endif %}
+            </div>
         </div>
         <hr>
     {% endfor %}
