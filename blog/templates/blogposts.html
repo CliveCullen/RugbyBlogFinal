@@ -3,42 +3,51 @@
 {% load gravatar %}
 {% block content %}
     <div class="container" id="content">
-    <hr>
-    <hr>
-    {% for post in posts %}
-        <div class="row" id="results">
+        <hr>
+        <hr>
+        {% for post in posts %}
+            <div class="row" id="results">
 
 
-            <div class="col-md-2 col-sm-3 text-center">
-                <a class="story-img" href="#">
-                    <img src="{% gravatar_url post.author.email 150 %}"
-                         style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;"
-                         class="img-circle">
-                </a>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a class="story-img" href="#">
+                        <img src="{% gravatar_url post.author.email 150 %}"
+                             style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;"
+                             class="img-circle">
+                    </a>
+                    </div>
 
-            </div>
-            <div class="col-md-6 col-sm-9">
+                    <div class="row">
 
-                <h3>{{ post.title }}</h3>
-                <div class="row" id="results">
-                    <div class="col-xs-9">
+                        <h3>{{ post.title }}</h3>
+                    </div>
+                    <div class="row" id="results">
                         <p>{{ post.content|truncatewords:30 }}</p>
+                    </div>
+                    <div class="row" id="results">
                         <p>{{ post.published_date }}</p>
+                    </div>
+                    <div class="row" id="results">
                         <p>Views <span class="badge">{{ post.views }}</span></p>
+                    </div>
+                    <div class="row" id="results">
                         <p><strong> Tag</strong> {{ post.tag }}</p>
+                    </div>
+                    <div class="row" id="results">
                         <button class="btn btn-default" onclick="location.href={{ post.id }}">Read More</button>
                         <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-md-2 text-center">
                 {% if post.image %}
-                    <img src="/media/{{ post.image }}" height="80%" width="80%">
+                    <img src="/media/{{ post.image }}" height="80px" width="80px">
                 {% endif %}
             </div>
-        </div>
-        <hr>
-    {% endfor %}
+            </div>
+            <hr>
+        {% endfor %}
 {% endblock %}
 </div>
