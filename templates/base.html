@@ -136,12 +136,9 @@
         margin-left: auto;
         margin-right: auto;
     }
-    #ball {
-        border-radius: 50%;
-        background-color: #555555;
-        color: white;
+    #disqus_thread{
+        color:white;
     }
-
     @media screen
     and (device-width: 360px)
     and (device-height: 640px)
@@ -202,7 +199,7 @@
                                 <li><a href="/blog">Blog</a></li>
                                 <li><a href="/products/">Products</a></li>
                                 <li><a href="/logout/"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
-                                <li><a class="active" href="/logout/">{{ user.email }} </a></li>
+                                <li><a class="">{{ user.email }} </a></li>
                             {% else %}
                                 <li class="active"><a href="/home/">Home</a>
                                 <li><a href="/products/">Products</a></li>
