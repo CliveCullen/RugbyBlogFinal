@@ -147,20 +147,20 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="myNavbar">
                 <div class="container-fluid">
 
-                    <div class="navbar-header" id="myNavbar" align="center">
+                    <div class="navbar-header" id="myNavbar">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="/home/">
+                        <a class="navbar-brand" href="/home/" margin="30%">
                             <img src="https://secure.gravatar.com/avatar/6ea3e3593d1d6c3fdc04ff977cccc3c9.jpg?r=g&amp;s=150&amp;d=mm"
                                  style="width:35px; height: 35px; background-color: #222; color: #ffffff;"
                                  class="img-circle">
                         </a>
                         <a class="navbar-brand" href="/home/">Scrumcap</a>
                     </div>
-                    <div class="collapse navbar-collapse navbar-center " id="myNavbar" align="center">
+                    <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                             {% if user.is_authenticated %}
                                 <li class="active"><a href="/home/">Home</a></li>
@@ -223,17 +223,16 @@
             source: teams
         });
 
-        $('#inputOne').animateCss('bounce');
+        $('#vs').on('click', function () {
+            $('#inputOne').addClass('animated shake');
+            $('#inputOne').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                $('#inputOne').removeClass('animated shake');
+            });
+            $('#inputTwo').addClass('animated shake');
+            $('#inputTwo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                $('#inputTwo').removeClass('animated shake');
+            });
 
-
-
-        $.fn.extend({
-            animateCss: function (animationName) {
-                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                this.addClass('animated ' + animationName).one(animationEnd, function () {
-                    $(this).removeClass('animated ' + animationName);
-                });
-            }
         });
     });
 </script>
