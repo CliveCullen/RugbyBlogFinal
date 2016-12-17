@@ -223,19 +223,17 @@
             source: teams
         });
 
-        $('#vs').on('click', function () {
-            $('#inputOne').addClass('animated shake');
-            $('#inputOne').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $('#inputOne').removeClass('animated shake');
-            });
-            $('#inputTwo').addClass('animated shake');
-            $('#inputTwo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $('#inputTwo').removeClass('animated shake');
-            });
-            $('#myNavbar').addClass('animated shake');
-            $('#myNavbar').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $('#myNavbar').removeClass('animated shake');
-            });
+        $('#inputOne').animateCss('bounce');
+
+
+
+        $.fn.extend({
+            animateCss: function (animationName) {
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                this.addClass('animated ' + animationName).one(animationEnd, function () {
+                    $(this).removeClass('animated ' + animationName);
+                });
+            }
         });
     });
 </script>
