@@ -229,7 +229,13 @@
 <script>
     $('#vs').on('click', function () {
         $('#inputOne').addClass('animated shake');
+        $('#inputOne').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $('#inputOne').removeClass('animated shake');
+        });
          $('#inputTwo').addClass('animated shake');
+        $('#inputTwo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+             $('#InputTwo').removeClass('animated shake');
+        });
     });
 </script>
 </body>
