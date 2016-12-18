@@ -224,18 +224,22 @@
         $("#inputTwo").autocomplete({
             source: teams
         });
+        var animEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        var anim ="animated shake"
+        $().ready(function () {
+            $('#vs').on('click', function () {
+                $('#inputOne').addClass(anim);
+                $('#inputOne').one(animEnd, function () {
+                    $('#inputOne').removeClass(anim);
+                });
+                $('#inputTwo').addClass(anim);
+                $('#inputTwo').one(animEnd, function () {
+                    $('#inputTwo').removeClass(anim);
+                });
 
-        $('#vs').on('click', function () {
-            $('#inputOne').addClass('animated shake');
-            $('#inputOne').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $('#inputOne').removeClass('animated shake');
             });
-            $('#inputTwo').addClass('animated shake');
-            $('#inputTwo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $('#inputTwo').removeClass('animated shake');
-            });
+        })
 
-        });
     });
 </script>
 </body>
