@@ -102,11 +102,9 @@
         table-layout: fixed;
     }
 
-    #ball {
-        border-radius: 50%;
-        background-color: #555555;
-        color: white;
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    #myNavbar {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media screen
@@ -149,7 +147,7 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="myNavbar">
                 <div class="container-fluid">
 
-                    <div class="navbar-header">
+                    <div class="navbar-header" id="myNavbar" align="center">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -162,20 +160,19 @@
                         </a>
                         <a class="navbar-brand" href="/home/">Scrumcap</a>
                     </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="collapse navbar-collapse navbar-center " id="myNavbar" align="center">
                         <ul class="nav navbar-nav">
                             {% if user.is_authenticated %}
                                 <li class="active"><a href="/home/">Home</a></li>
                                 <li><a href="/blog">Blog</a></li>
                                 <li><a href="/products/">Products</a></li>
-                                <li><a href="/logout/"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
-                                </li>
+                                <li><a href="/logout/"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
                                 <li><a class="">{{ user.email }} </a></li>
                             {% else %}
                                 <li class="active"><a href="/home/">Home</a>
                                 <li><a href="/products/">Products</a></li>
                                 </ul>
-                                <ul class="nav navbar-nav">
+                                <ul class="nav navbar-nav navbar-center">
                                     <li><a href="/register/"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
                                     </li>
                                     <li><a href="/login/"><span class="glyphicon glyphicon-log-in"></span> Login</a>
@@ -225,22 +222,20 @@
         $("#inputTwo").autocomplete({
             source: teams
         });
-        var animEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        var anim ="animated shake"
-        $().ready(function () {
-            $('#vs').on('click', function () {
-                $('#inputOne').addClass(anim);
-                $('#inputOne').one(animEnd, function () {
-                    $('#inputOne').removeClass(anim);
-                });
-                $('#inputTwo').addClass(anim);
-                $('#inputTwo').one(animEnd, function () {
-                    $('#inputTwo').removeClass(anim);
-                });
+    });
+</script>
 
-            });
-        })
 
+<script>
+    $('#vs').on('click', function () {
+        $('#inputOne').addClass('animated shake');
+        $('#inputOne').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $('#inputOne').removeClass('animated shake');
+        });
+         $('#inputTwo').addClass('animated shake');
+        $('#inputTwo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+             $('#inputTne').removeClass('animated shake');
+        });
     });
 </script>
 </body>
