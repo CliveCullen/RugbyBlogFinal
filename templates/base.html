@@ -63,17 +63,6 @@
         margin-right: auto;
     }
 
-    #content {
-        background: rgba(0, 0, 0, 0.5);
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-left: auto;
-        margin-right: auto;
-
-    . h align-content: center;
-
-    }
-
     footer {
         background-color: #222;
         color: white;
@@ -123,8 +112,9 @@
         box-shadow: 0 2px #999;
         transform: translateY(4px);
     }
-    .hide{
-        visibility:hidden ;
+
+    .hide {
+        visibility: hidden;
     }
 
     @media screen
@@ -156,6 +146,17 @@
 
         .container {
             width: 100%;
+        }
+
+        #content {
+            background: rgba(0, 0, 0, 0.5);
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-left: auto;
+            margin-right: auto;
+
+        . h align-content: center;
+
         }
 
     }
@@ -258,8 +259,8 @@
             $('#inputTne').removeClass('animated shake');
         });
         $('#moveUp').addClass('animated fadeOutUpBig');
-         $('#moveUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-            
+        $('#moveUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+
             $('#moveUp').addClass('hide');
         });
     });

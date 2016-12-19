@@ -16,10 +16,8 @@ def head_to_head(request):
     games = game.objects.filter(Q(teamA=teamOne.Name,teamB=teamTwo.Name)|Q(teamA=teamTwo.Name,teamB=teamOne.Name)).order_by('-date')
 
 
-
-
-
     history = History.objects.filter(Q(teamA=teamOne.Name,teamB=teamTwo.Name)|Q(teamA=teamTwo.Name,teamB=teamOne.Name))
+
 
     return render(request,'home.html',{'teamOne':teamOne,'teamTwo':teamTwo,'games':games, 'overalls':history})
 
