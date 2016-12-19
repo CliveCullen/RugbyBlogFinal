@@ -1,9 +1,11 @@
+
+
 import os
 import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.getenv('SECRET_KEY', '')
+SECRET_KEY = os.getenv('SECRET_KEY','')
 
 DEBUG = os.getenv('DJANGO_DEBUG')
 
@@ -27,9 +29,6 @@ INSTALLED_APPS = [
     'paypal.standard.ipn',
     'products',
     'django_gravatar',
-    'debug_toolbar',
-    'tinymce',
-    'emoticons',
     'storages',
 ]
 
@@ -116,6 +115,8 @@ USE_TZ = True
 
 DISQUS_WEBSITE_SHORTNAME = 'MyRugbyBlog'
 
+
+
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'accounts.backends.EmailAuth'
@@ -133,11 +134,11 @@ AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME', '')
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID', '')
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY', '')
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-AWS_S3_HOST = 's3-eu-west-1.amazonaws.com'
+AWS_S3_HOST ='s3-eu-west-1.amazonaws.com'
 
 # STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
+   os.path.join(BASE_DIR, "static"),
 )
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
@@ -147,8 +148,4 @@ MEDIAFILES_LOCATION = 'media'
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
-ALLOWED_HOSTS = {'scrumcap.herokuapp.com', '127.0.0.1'}
-
-
-# tinymce settings
-TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min.js')
+ALLOWED_HOSTS={'scrumcap.herokuapp.com', '127.0.0.1'}
