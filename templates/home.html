@@ -9,8 +9,8 @@
                 <div id="moveUp">
                     <h1>Welcome to scrumcap </h1>
                     <h2>Where teams really go head to head</h2>
-                    </div>
-                    <h2>Choose your teams!</h2>
+                </div>
+                <h2>Choose your teams!</h2>
             </div>
 
             <div class="col-md-5" id="team1" align="center">
@@ -56,34 +56,40 @@
         <div class="container" id="content">
 
 
-                <h3 align=center>OverAll</h3>
+        <h3 align=center>OverAll</h3>
 
 
 
 
 
-                <table class="table " id="results" align="center">
-                    <thead>
-                    <tr>
-                        <th>Won by {{ overall.teamA }}</th>
-                        <th>won by {{ overall.teamB }}</th>
-                        <th>Drawn</th>
-                        <th>{{ teamOne.Name }} points</th>
-                        <th>{{ teamTwo.Name }} points</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {% for overall in overalls %}
-                    <tr>
-                        <td>{{ overall.wonByTeamA }}</td>
-                        <td>{{ overall.wonByTeamB }}</td>
-                        <td>{{ overall.drawn }}</td>
-                        <td>{{ overall.teamAPoints }}</td>
-                        <td>{{ overall.teamBPoints }}</td>
-                    </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
+        <table class="table " id="results" align="center">
+            <thead>
+            <tr>
+                <th>Won by {{ teamOne }}<img id="team-1-img"
+                                             src="{{ STATIC_URL }}{{ teamOne.image.url }}"
+                                             height="50px"
+                                             width="30px" vspace="5px"></th>
+                <th>Won by {{ teamTwo }}<img id="team-2-img"
+                                             src="{{ STATIC_URL }}{{ teamOne.image.url }}"
+                                             height="50px"
+                                             width="30px" vspace="5px"></th>
+                <th>Drawn</th>
+                <th>{{ teamOne.Name }} points</th>
+                <th>{{ teamTwo.Name }} points</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for overall in overalls %}
+                <tr>
+                    <td>{{ overall.wonByTeamA }}</td>
+                    <td>{{ overall.wonByTeamB }}</td>
+                    <td>{{ overall.drawn }}</td>
+                    <td>{{ overall.teamAPoints }}</td>
+                    <td>{{ overall.teamBPoints }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
 
         <h3 align=center>Recent Games</h3>
 
