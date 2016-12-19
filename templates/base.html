@@ -106,6 +106,12 @@
         margin-left: auto;
         margin-right: auto;
     }
+    #ball {
+ +        border-radius: 50%;
+          background-color: #555555;
+ -        color:white;
+ +        color: white;
+      }
 
     @media screen
     and (device-width: 360px)
@@ -227,6 +233,7 @@
 
 
 <script>
+    $('')
     $('#vs').on('click', function () {
         $('#inputOne').addClass('animated shake');
         $('#inputOne').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
