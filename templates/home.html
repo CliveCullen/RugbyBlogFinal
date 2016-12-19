@@ -74,12 +74,12 @@
                                              height="50px"
                                              width="30px" vspace="5px"></th>
                 <th>Drawn</th>
-                <th>{{ teamOne.Name }} points</th>
-                <th>{{ teamTwo.Name }} points</th>
+                <th>{{ history.teamA }} points</th>
+                <th>{{ history.teamB }} points</th>
             </tr>
             </thead>
             <tbody>
-            {% for overall in overalls %}
+
                 <tr>
                     <td>{{ overall.wonByTeamA }}</td>
                     <td>{{ overall.wonByTeamB }}</td>
@@ -87,7 +87,7 @@
                     <td>{{ overall.teamAPoints }}</td>
                     <td>{{ overall.teamBPoints }}</td>
                 </tr>
-            {% endfor %}
+
             </tbody>
         </table>
 
