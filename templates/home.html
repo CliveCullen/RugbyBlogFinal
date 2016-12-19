@@ -65,12 +65,8 @@
                 <table class="table " id="results" align="center">
                     <thead>
                     <tr>
-                        <th>Played</th>
                         <th>Won by {{ overall.TeamA }}</th>
-                        <th>won by <img
-                                src="{{ STATIC_URL }}{{ teamTwo.image.url }}"
-                                height="40px"
-                                width="15%"></th>
+                        <th>won by {{ overall.TeamB }}</th>
                         <th>Drawn</th>
                         <th>{{ teamOne.Name }} points</th>
                         <th>{{ teamTwo.Name }} points</th>
