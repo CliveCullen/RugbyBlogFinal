@@ -79,7 +79,7 @@
             </tr>
             </thead>
             <tbody>
-
+                {% for overall in overalls %}
                 <tr>
                     <td>{{ overall.wonByTeamA }}</td>
                     <td>{{ overall.wonByTeamB }}</td>
@@ -87,7 +87,7 @@
                     <td>{{ overall.teamAPoints }}</td>
                     <td>{{ overall.teamBPoints }}</td>
                 </tr>
-
+                {% endfor %}
             </tbody>
         </table>
 
