@@ -123,8 +123,9 @@
         box-shadow: 0 2px #999;
         transform: translateY(4px);
     }
-    .hide{
-        visibility:hidden ;
+
+    .hide {
+        visibility: hidden;
     }
 
     @media screen
@@ -155,6 +156,29 @@
         }
 
         .container {
+            width: 100%;
+        }
+
+    }
+
+    @media screen
+    and (device-width: 360px)
+    and (device-height: 640px)
+    and (-webkit-device-pixel-ratio: 4)
+    and (orientation: landscape) {
+
+        #team-1-img {
+            height: 150px;
+            width: 175px;
+            padding-left: 2px;
+        }
+
+        #team-2-img {
+            height: 150px;
+            width: 175px;
+            padding-right: 2px;
+        }
+         .container {
             width: 100%;
         }
 
@@ -258,7 +282,7 @@
             $('#inputTne').removeClass('animated shake');
         });
         $('#moveUp').addClass('animated fadeOutUpBig');
-         $('#moveUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+        $('#moveUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
 
             $('#moveUp').addClass('hide');
         });
