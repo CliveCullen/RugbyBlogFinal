@@ -2,7 +2,550 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="555aecd2-9826-4b24-80a9-457d6c03e5aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rugbyblog/settings.py" afterPath="$PROJECT_DIR$/rugbyblog/settings.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/AddOnManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/Compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/DragDropOverrides.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/Editor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/EditorCommands.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/EditorManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/EditorObservable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/EditorUpload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/EnterKey.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/Env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/FocusManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ForceBlocks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/Formatter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/InsertContent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/InsertList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/LegacyInput.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/Mode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/NodeChange.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/NotificationManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/Register.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/SelectionOverrides.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/Shortcuts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/UndoManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/WindowManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/caret/CaretBookmark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/caret/CaretCandidate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/caret/CaretContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/caret/CaretPosition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/caret/CaretUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/caret/CaretWalker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/caret/FakeCaret.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/caret/LineUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/caret/LineWalker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/content/LinkTargets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/data/Binding.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/data/ObservableArray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/data/ObservableObject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/BookmarkManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/ControlSelection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/DOMUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/Dimensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/DomQuery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/ElementUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/EventUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/MousePosition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/NodePath.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/NodeType.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/Range.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/RangeUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/ScriptLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/Selection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/Serializer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/Sizzle.jQuery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/Sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/StyleSheetLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/TreeWalker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/dom/TridentSelection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/file/BlobCache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/file/Conversions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/file/ImageScanner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/file/UploadStatus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/file/Uploader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/fmt/Hooks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/fmt/Preview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/geom/ClientRect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/geom/Rect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/html/DomParser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/html/Entities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/html/Node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/html/SaxParser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/html/Schema.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/html/Serializer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/html/Styles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/html/Writer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/jquery.tinymce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/text/ExtendingChar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/text/Zwsp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/AbsoluteLayout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/BoxUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/ButtonGroup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/ClassList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Collection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/ColorBox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/ColorButton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/ColorPicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/ComboBox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Container.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Control.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/DomUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/DragHelper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/ElementPath.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Factory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/FieldSet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/FilePicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/FitLayout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/FlexLayout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/FloatPanel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/FlowLayout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/FormItem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/FormatControls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/GridLayout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Iframe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/InfoBox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/KeyboardNavigation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Label.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Layout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/ListBox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/MenuBar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/MenuButton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/MenuItem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/MessageBox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Movable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Notification.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Panel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/PanelButton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Path.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Progress.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Radio.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/ReflowQueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Resizable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/ResizeHandle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Scrollable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/SelectBox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Selector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Sidebar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Spacer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/SplitButton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/StackLayout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/TabPanel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/TextBox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Throbber.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Widget.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/ui/Window.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/undo/Diff.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/undo/Fragments.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/undo/Levels.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Arr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Color.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Delay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/EventDispatcher.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Fun.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/I18n.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/JSON.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/JSONP.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/JSONRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/LocalStorage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Observable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Private.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Promise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Quirks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Tools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/URI.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/Uuid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/VK.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/classes/util/XHR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/jquery.tinymce.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/langs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/advlist/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/advlist/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/anchor/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/anchor/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/autolink/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/autolink/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/autoresize/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/autoresize/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/autosave/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/autosave/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/bbcode/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/bbcode/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/charmap/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/charmap/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/code/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/code/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/codesample/classes/Dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/codesample/classes/Plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/codesample/classes/Prism.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/codesample/classes/Utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/codesample/css/prism.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/codesample/plugin.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/codesample/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/codesample/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/colorpicker/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/colorpicker/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/css/dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/img/buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/img/icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/img/items.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/img/menu_arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/img/menu_check.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/img/progress.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/img/tabs.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/tiny_mce_popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/utils/editable_selects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/utils/form_utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/utils/mctabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/compat3x/utils/validate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/contextmenu/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/contextmenu/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/directionality/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/directionality/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-cool.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-cry.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-frown.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-wink.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/img/smiley-yell.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/emoticons/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/example/dialog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/example/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/example/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/example_dependency/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/example_dependency/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/fullpage/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/fullpage/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/fullscreen/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/fullscreen/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/hr/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/hr/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/image/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/image/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/config/bolt/atomic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/config/bolt/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/config/bolt/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/config/bolt/prod.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/src/demo/html/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/src/demo/js/Demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/src/main/js/CropRect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/src/main/js/Dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/src/main/js/ImagePanel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/src/main/js/ImageSize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/src/main/js/Plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/src/main/js/Proxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/src/main/js/UndoStack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/imagetools/src/main/js/Utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/importcss/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/importcss/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/insertdatetime/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/insertdatetime/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/layer/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/legacyoutput/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/legacyoutput/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/link/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/link/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/lists/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/lists/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/config/bolt/atomic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/config/bolt/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/config/bolt/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/config/bolt/prod.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/config/dent/depend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/demo/html/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/demo/js/tinymce/media/Demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/Plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/core/DataToHtml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/core/HtmlToData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/core/Mime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/core/Nodes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/core/Sanitize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/core/Service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/core/UpdateHtml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/core/UrlPatterns.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/core/VideoScript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/main/js/tinymce/media/ui/Dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/test/js/atomic/HtmlToDataTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/test/js/browser/DataAttributeTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/test/js/browser/DataToHtmlTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/test/js/browser/MediaEmbedTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/test/js/browser/PlaceholderTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/test/js/browser/PluginTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/test/js/browser/SubmitTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/media/src/test/js/module/tinymce/media/test/Utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/nonbreaking/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/nonbreaking/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/noneditable/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/noneditable/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/pagebreak/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/pagebreak/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/paste/classes/Clipboard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/paste/classes/Plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/paste/classes/Quirks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/paste/classes/SmartPaste.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/paste/classes/Utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/paste/classes/WordFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/paste/plugin.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/paste/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/paste/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/preview/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/preview/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/print/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/print/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/save/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/save/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/searchreplace/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/searchreplace/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/spellchecker/classes/DomTextMatcher.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/spellchecker/classes/Plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/spellchecker/plugin.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/spellchecker/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/spellchecker/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/tabfocus/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/tabfocus/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/classes/CellSelection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/classes/Dialogs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/classes/Plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/classes/Quirks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/classes/ResizeBars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/classes/SplitCols.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/classes/TableGrid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/classes/Utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/plugin.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/table/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/template/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/template/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/textcolor/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/textcolor/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/textpattern/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/textpattern/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/toc/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/toc/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/css/visualblocks.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/address.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/article.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/aside.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/blockquote.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/div.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/dl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/figure.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/h1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/h2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/h3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/h4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/h5.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/h6.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/hgroup.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/ol.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/p.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/pre.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/section.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/img/ul.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualblocks/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualchars/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/visualchars/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/config/bolt/atomic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/config/bolt/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/config/bolt/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/config/bolt/prod.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/config/dent/depend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/demo/html/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/demo/js/tinymce/wordcount/Demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/Plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/alien/Arr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/text/StringMapper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/text/UnicodeData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/text/WordBoundary.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/text/WordGetter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/test/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/test/js/atomic/core/IsWordBoundaryTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/test/js/atomic/core/StringMapperTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/test/js/atomic/core/WordGetterTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/plugins/wordcount/src/test/js/browser/core/PluginTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/AbsoluteLayout.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Animations.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Arrows.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Button.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/ButtonGroup.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Checkbox.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/ColorBox.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/ColorButton.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/ColorPicker.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/ComboBox.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Container.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Content.Inline.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Content.Objects.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Content.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/CropRect.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/FieldSet.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/FitLayout.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/FloatPanel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/FlowLayout.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Icons.Ie7.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Iframe.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/ImagePanel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/InfoBox.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Label.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/ListBox.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Menu.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/MenuBar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/MenuButton.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/MenuItem.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Notification.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Panel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Progress.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Radio.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Reset.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/ResizeHandle.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Scrollable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/SelectBox.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Sidebar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Slider.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Spacer.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/SplitButton.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/StackLayout.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/TabPanel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/TextBox.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Throbber.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/TinyMCE.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/ToolTip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/Window.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/content.inline.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/content.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/tinymce-small.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/tinymce.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/tinymce.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/tinymce.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/tinymce.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/fonts/tinymce.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/img/anchor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/img/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/img/object.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/img/trans.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/skin.dev.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/skin.ie7.dev.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/skin.ie7.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/skin.ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/skin.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/skins/lightgray/skin.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/config/bolt/atomic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/config/bolt/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/config/bolt/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/config/bolt/prod.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/config/dent/depend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/demo/css/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/demo/html/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/demo/js/tinymce/inlite/Demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/Theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Arr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Bookmark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/EditorSettings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Type.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Unlink.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Uuid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Actions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Convert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/ElementMatcher.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Layout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Matcher.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Measure.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/PredicateId.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/SelectionMatcher.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/SkinLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/UrlType.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/file/Conversions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/file/Picker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Buttons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Forms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Panel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/atomic/alien/ArrTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/atomic/alien/TypeTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/atomic/alien/UuidTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/atomic/core/ConvertTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/atomic/core/MatcherTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/atomic/core/UrlTypeTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/AutoCompleteTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/ThemeTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/alien/BookmarkTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/alien/EditorSettingsTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/alien/UnlinkTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/core/ActionsTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/core/ElementMatcher.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/core/LayoutTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/core/MeasureTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/core/PredicateIdTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/core/SelectionMatcherTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/file/ConversionsTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/browser/file/SelectionMatcher.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/src/test/js/module/tinymce/inlite/test/Toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/inlite/theme.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/config/bolt/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/config/bolt/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/config/bolt/prod.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/config/dent/depend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/demo/html/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/demo/js/tinymce/modern/Demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/Theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/modes/Iframe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/modes/Inline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/A11y.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/ContextToolbars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/Menubar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/ProgressState.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/Resize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/Sidebar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/SkinLoaded.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/Toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/test/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/src/test/browser/SidebarTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/themes/modern/theme.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/tinymce.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/tinymce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/tinymce/tinymce.min.js" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +581,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rugbyblog/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+            <state relative-caret-position="400">
+              <caret line="37" column="59" lean-forward="true" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -50,7 +593,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-150">
@@ -163,6 +706,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rugbyblogcopy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rugbyblogcopy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -531,14 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threads/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -561,11 +1110,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rugbyblog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+        <state relative-caret-position="400">
+          <caret line="37" column="59" lean-forward="true" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
