@@ -56,48 +56,43 @@
         <div class="container" id="content">
 
 
-        <h3 align=center>OverAll</h3>
+            <h3 align=center>OverAll</h3>
 
 
-
-
-
-        <table class="table " id="results" align="center">
-            <thead>
-            <tr>
-                <th>Won by {{ teamOne }}<img id="team-1-img"
-                                             src="{{ STATIC_URL }}{{ teamOne.image.url }}"
-                                             height="50px"
-                                             width="30px" vspace="5px"></th>
-                <th>Won by {{ teamTwo }}<img id="team-2-img"
-                                             src="{{ STATIC_URL }}{{ teamTwo.image.url }}"
-                                             height="50px"
-                                             width="30px" vspace="5px"></th>
-                <th>Drawn</th>
-                <th>{{ teamOne }} points</th>
-                <th>{{ teamTwo}} points</th>
-            </tr>
-            </thead>
-            <tbody>
-                {% for overall in overalls %}
+            <table class="table " id="results" align="center">
+                <thead>
                 <tr>
-                    <td>{{ overall.wonByTeamA }}</td>
-                    <td>{{ overall.wonByTeamB }}</td>
-                    <td>{{ overall.drawn }}</td>
-                    <td>{{ overall.teamAPoints }}</td>
-                    <td>{{ overall.teamBPoints }}</td>
+                    <th>Won by {{ teamOne }}<img id="team-1-img"
+                                                 src="{{ STATIC_URL }}{{ teamOne.image.url }}"
+                                                 height="50px"
+                                                 width="30px" vspace="5px"></th>
+                    <th>Won by {{ teamTwo }}<img id="team-2-img"
+                                                 src="{{ STATIC_URL }}{{ teamTwo.image.url }}"
+                                                 height="50px"
+                                                 width="30px" vspace="5px"></th>
+                    <th>Drawn</th>
+                    <th>{{ teamOne }} points</th>
+                    <th>{{ teamTwo }} points</th>
                 </tr>
+                </thead>
+                <tbody>
+                {% for overall in overalls %}
+                    <tr>
+                        <td>{{ overall.wonByTeamA }}</td>
+                        <td>{{ overall.wonByTeamB }}</td>
+                        <td>{{ overall.drawn }}</td>
+                        <td>{{ overall.teamAPoints }}</td>
+                        <td>{{ overall.teamBPoints }}</td>
+                    </tr>
                 {% endfor %}
-            </tbody>
-        </table>
-
-        <h3 align=center>Recent Games</h3>
-
-
+                </tbody>
+            </table>
+        </div>
         <div>
 
-        
         </div>
+        <div class="container" id="content">
+        <h3 align=center>Recent Games</h3>
 
 
         <table class="table" id="results" align="center">
