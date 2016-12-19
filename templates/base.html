@@ -106,12 +106,12 @@
         margin-left: auto;
         margin-right: auto;
     }
+
     #ball {
- +        border-radius: 50%;
-          background-color: #555555;
- -        color:white;
- +        color: white;
-      }
+        border-radius: 50%;
+        background-color: #555555;
+        color: white;
+    }
 
     @media screen
     and (device-width: 360px)
@@ -236,12 +236,12 @@
     $('')
     $('#vs').on('click', function () {
         $('#inputOne').addClass('animated shake');
-        $('#inputOne').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('#inputOne').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
             $('#inputOne').removeClass('animated shake');
         });
-         $('#inputTwo').addClass('animated shake');
+        $('#inputTwo').addClass('animated shake');
         $('#inputTwo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-             $('#inputTne').removeClass('animated shake');
+            $('#inputTne').removeClass('animated shake');
         });
         $('#moveUp').addClass('animated fadeOutUpBig');
     });
