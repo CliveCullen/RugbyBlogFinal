@@ -63,11 +63,11 @@
                 <thead>
                  {% for overall in overalls %}
                 <tr>
-                    <th>Won by {{ overall.TeamA }}</th>
-                    <th>Won by {{ overall.TeamB }}</th>
+                    <th>Won by {{ overall.teamA }}</th>
+                    <th>Won by {{ overall.teamB }}</th>
                     <th>Drawn</th>
-                    <th>{{ teamOne }} points</th>
-                    <th>{{ teamTwo }} points</th>
+                    <th>{{ overall.teamA }} points</th>
+                    <th>{{ overall.teamB }} points</th>
                 </tr>
                 </thead>
                 <tbody>
