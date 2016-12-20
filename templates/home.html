@@ -61,16 +61,16 @@
 
             <table class="table " id="results" align="center">
                 <thead>
+                 {% for overall in overalls %}
                 <tr>
-                    <th>Won by {{ teamOne }}</th>
-                    <th>Won by {{ teamTwo }}</th>
+                    <th>Won by {{ overall.TeamA }}</th>
+                    <th>Won by {{ overall.TeamB }}</th>
                     <th>Drawn</th>
                     <th>{{ teamOne }} points</th>
                     <th>{{ teamTwo }} points</th>
                 </tr>
                 </thead>
                 <tbody>
-                {% for overall in overalls %}
                     <tr>
                         <td>{{ overall.wonByTeamA }}</td>
                         <td>{{ overall.wonByTeamB }}</td>
