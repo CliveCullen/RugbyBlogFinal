@@ -25,7 +25,7 @@ class game(models.Model):
     competition = models.TextField()
 
     def __unicode__(self):
-        return self.host + " vs " + self.teamB + "  " +self.competition
+        return self.teamA + " vs " + self.teamB + "  " +self.competition
 
 
 class History(models.Model):
