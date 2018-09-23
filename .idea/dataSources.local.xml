@@ -4,6 +4,7 @@
     <data-source name="db" uuid="edcb3459-8c19-46f5-bfe8-6ae63c0f5c23">
       <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <introspection-schemas>*:</introspection-schemas>
     </data-source>
   </component>
 </project>
